@@ -1,89 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Cudi Turismo - Contacto</title>
-    <link rel="icon" href="asset/media/logo.ico" />
-  </head>
+    <link rel="icon" href="asset/media/logo.ico">
+</head>
 
-  <body>
+<body>
     <header>
-      <a href=""
-        ><img
-          src="asset/media//logo.png"
-          alt="turismo"
-          width="20%"
-          title="logo"
-      /></a>
-      <!--logo de la compania-->
-      <u>
-        <h1>CUDI TURISMO</h1>
-      </u>
-      <nav>
-        <ul>
-          <!-- Lista de links de navegacion fijos -->
-
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="destinos.html">Destinos </a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <h1>Contactos</h1>
+        <img src="asset/media//logo.png" alt="turismo" width="20%" title="logo"></div> <!--logo de la compania-->
+        <u>
+            <h1>CUDI TURISMO</h1>
+        </u>
+        <nav>
+            <ul> <!-- Lista de links de navegacion fijos -->
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="registro.html">
+                    <li>Registro</li>
+                </a>
+                <a href="destinos.html">
+                    <li>Destinos</li>
+                </a>
+                <a href="nosotros.html">
+                    <li>Nosotros</li>
+                </a>
+                <a href="contacto.html">
+                    <li>Contacto</li>
+                </a>
+        </nav>
+        <h1>Contactos</h1>
     </header>
-    <hr />
+    <hr>
     <h2>Estamos ubicados en:</h2>
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.5597409030147!2d-58.63124772302765!3d-34.79185706746065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5925425fb9b%3A0xb6680e29203b8739!2sCUDI.%20Centro%20Universitario%20de%20la%20Innovaci%C3%B3n.%20Gonz%C3%A1lez%20Cat%C3%A1n!5e0!3m2!1sen!2sar!4v1694493117551!5m2!1sen!2sar"
-      width="400"
-      height="300"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.5597409030147!2d-58.63124772302765!3d-34.79185706746065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5925425fb9b%3A0xb6680e29203b8739!2sCUDI.%20Centro%20Universitario%20de%20la%20Innovaci%C3%B3n.%20Gonz%C3%A1lez%20Cat%C3%A1n!5e0!3m2!1sen!2sar!4v1694493117551!5m2!1sen!2sar"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <hr />
-    <a href="index.html">
-      <h4>VOLVER AL INICIO</h4>
-    </a>
+    <hr>
 
-    <body bgcolor="#EAFAF1"></body>
-    <footer>
-      <div>
-        <table>
-          <u>
-            <h4>Contactenos</h4>
-          </u>
-          <tr>
-            <td><img src="asset/media/MAIL.png" width="36" /></td>
-            <td><a href="">cudi.turismo@gmail.com</a></td>
-          </tr>
+    <body bgcolor=#EAFAF1>
 
-          <th>
-            <u>
-              <hr />
-              <h4>Redes</h4>
-            </u>
-          </th>
-          <tr>
-            <td><img src="asset/media/FACEBOOK.png" width="36" /></td>
-            <td><a href="">Facebook</a></td>
-          </tr>
-          <tr>
-            <td><img src="asset/media/TWITTER.png" width="36" /></td>
-            <td><a href="">Twitter</a></td>
-          </tr>
-          <tr>
-            <td><img src="asset/media/INSTAGRAM.png" width="36" /></td>
-            <td><a href="">Instagram</a></td>
-          </tr>
-        </table>
-      </div>
-      <hr />
-    </footer>
-  </body>
+        <section> <!-- Formulario -->
+            <h1>Formulario de Contacto</h1>
+            <form action="" method="">
+                <fieldset>
+                    <legend>
+                        <p>Por favor, complete el siguiente formulario:</p>
+                    </legend>
+
+                    <label for="nombre" >Nombre: </label>
+                    <input type="text" name="nombre" required > <br><br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" name="email" required ><br><br>
+
+                    <label for="tel">Teléfono:</label>
+                    <input type="number" name="tel" required ><br><br>
+
+                    <label>Destinos de Interés:</label><br><br>
+
+                    <label for="destino1">Córdoba</label>
+                    <input type="checkbox" value="Córdoba"> <br>
+
+                    <label for="destino2">Cosquin</label>
+                    <input type="checkbox" value="Cosquin"> <br>
+
+                    <label for="destino3">General Belgrano</label>
+                    <input type="checkbox" value="GeneralBelgrano"> <br>
+
+                    <label for="destino4">La Falda</label>
+                    <input type="checkbox" value="LaFalda"> <br>
+
+                    <label for="destino5">Villa Carlos Paz</label>
+                    <input type="checkbox" value="VillaCarlosPaz"> <br>
+
+                    <label for="destino6">Villa Maria</label>
+                    <input type="checkbox" value="VillaMaria"> <br> <br>
+
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea name="comentario" cols="40" rows="6"></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+        <a href="index.html">
+            <h4>VOLVER AL INICIO</h4>
+        </a>
+    
+
+
+        <footer>
+            <div>
+                <table>
+
+                    <u>
+                        <h4>Contactenos</h4>
+                    </u>
+                    <tr>
+                        <td><img src="asset/media/MAIL.png" width="40"></td>
+                        <td><a href="">cudi.turismo@gmail.com</a></td>
+                    </tr>
+                    <th><u>
+                            <h4>Redes</h4>
+                        </u></th>
+                    <tr>
+                        <td><img src="asset/media/FACEBOOK.png" width="40"></td>
+                        <td><a href="">Facebook</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="asset/media/TWITTER.png" width="40"></td>
+                        <td><a href="">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="asset/media/INSTAGRAM.png" width="40"></td>
+                        <td><a href="">Instagram</a></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+        </footer>
+
+
+
+
+    </body>
+
 </html>
