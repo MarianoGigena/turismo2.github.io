@@ -1,0 +1,15 @@
+.section__nosotros {
+    width: 100%;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+
+.section__nosotros-historia {
+    border: 1px dotted gray;
+    width: 70%;
+    padding: 20px;
+    margin: 30px ;
+    justify-content: center;
+}
