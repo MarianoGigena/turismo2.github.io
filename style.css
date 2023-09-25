@@ -1,15 +1,38 @@
 .section__nosotros {
     width: 100%;
-    background-color: lightblue;
     padding: 10px;
 }
 
-
-
 .section__nosotros-historia {
-    border: 1px dotted gray;
+    border: 2px dotted gray;
     width: 70%;
     padding: 20px;
     margin: 30px ;
-    justify-content: center;
+    text-align: center;
+}.section__nosotros-historia h3 {
+    font-size: 25px;
+}.section__nosotros-historia p {
+    font-size: 18px;
+}
+
+footer {
+    height: 30%;
+    width: 100;
+    background-color: #D2FAE3;
+}
+.footer_volverIn {
+    text-align: end;
+    padding: 20px;
+}
+.container__redes {
+    text-align: center;
+    padding: 20px;
+} 
+.container__redes-link {
+    height: 100px;
+    margin: 20px;
+
+}
+h4 {
+    font-size: 20px;
 }
