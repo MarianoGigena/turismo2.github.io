@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+
+}
+
+.navegacion {
+    background-color: lightgray;
+
+}
+
+ul {
+    text-align: center;
+    display: inline, block;
+    background-color: darkgray;
+    border-radius: 10px;
+
+}
+
+li {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
+li>a:hover {
+    background-color: black;
+    color: white;
+}
+
+nav {
+
+    position: static
+}
+
+h1 {
+    text-align: center;
+}
