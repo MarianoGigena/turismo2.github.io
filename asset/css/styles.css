@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgray;
+    /* Cambia esto al color que desees */
+    color: #fff;
+    /* Cambia esto al color del texto que desees */
+    padding: 10px 0;
+    /* Añade relleno para el contenido de la barra de navegación */
+    z-index: 1000;
+
+}
+
+ul {
+    text-align: center;
+    display: inline, block;
+    background-color: darkgray;
+    border-radius: 10px;
+
+}
+
+li {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
+li>a:hover {
+    background-color: black;
+    color: white;
+}
+
+nav {
+
+    position: static
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+
+}
+
+h2>a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 300px;
+}
+
+.articulo1 {
+    text-align: center;
+}
+
+.parrafo {
+    font-size: 1.5rem;
+    min-width: 500px;
+    align-content: center;
+}
+
+.articulo1div {
+    margin: 0 20% 0 20%;
+    text-align: justify;
+}
