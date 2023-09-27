@@ -29,6 +29,9 @@ footer {
     background-color: #D2FAE3;
 }
 
+.container__redes {
+    text-align: center;
+}
 .container__redes-link {
     height: 100px;
     margin: 20px;
