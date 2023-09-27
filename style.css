@@ -1,19 +1,16 @@
+/*PAGINA NOSOTROS*/
 .section__nosotros {
     width: 100%;
     padding: 10px;
 }
-footer {
-    height: 30%;
-    width: 100;
-    background-color: #D2FAE3;
-    text-align: center;
-}
-
 .section__nosotros-historia, .section__nosotros-mision , .section__nosotros-vision {
     margin: 40px;
     padding: 20px;
     width: 60%;
     text-align: center;
+    background-color: #b3f6b3;
+    border-radius: 15px;
+
 }
 .section__nosotros-mision h4 , .section__nosotros-vision h4, .section__nosotros-historia h3 {
     font-size: 30px;
@@ -22,27 +19,39 @@ footer {
 }
 .section__nosotros-mision p , .section__nosotros-vision p, .section__nosotros-historia p {
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
-.footer__button-volver {
-    background-color: #95dbb4;
-    font-size: 15px;
-    size: 6px;
-    height: 50px;
-    border: 1px solid #a5e0bf;
-    border-radius: 10px;
-    padding: 5px;
-	font-weight:bold;
+/*FOOTER*/
+footer {
+    height: 30%;
+    width: 100%;
+    background-color: #D2FAE3;
 }
 
-.footer_volverIn {
-    text-align: end;
-    padding: 20px;
-    color: #4FF4C7;
-}
 .container__redes-link {
     height: 100px;
     margin: 20px;
 }
 .container__redes-link img {
-    width:5%;
+    width:35px;
+    text-align: center;
+
 }
+
+ /*BOTON VOLVER*/
+ .footer__button-volver {
+    display: inline-block;
+    width: 200px;
+    background-color: #0090af;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px; /* centra verticalmel texto */
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: bold;
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
