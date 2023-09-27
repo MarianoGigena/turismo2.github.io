@@ -9,7 +9,17 @@ body {
 }
 
 .navegacion {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: lightgray;
+    /* Cambia esto al color que desees */
+    color: #fff;
+    /* Cambia esto al color del texto que desees */
+    padding: 10px 0;
+    /* Añade relleno para el contenido de la barra de navegación */
+    z-index: 1000;
 
 }
 
@@ -44,4 +54,34 @@ nav {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+
+}
+
+h2>a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 250px;
+}
+
+.articulo1 {
+    text-align: center;
+}
+
+.parrafo {
+    font-size: 1.5rem;
+
+    align-content: center;
+}
+
+.articulo1div {
+    margin: 0 400px 0;
+    text-align: justify;
 }
