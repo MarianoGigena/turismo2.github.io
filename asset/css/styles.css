@@ -55,6 +55,8 @@ nav {
 
 h1 {
     text-align: center;
+    color: black;
+    font-size: 2rem;
 }
 
 h2 {
@@ -69,7 +71,7 @@ h2>a {
 }
 
 main {
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 .articulo1 {
@@ -78,11 +80,11 @@ main {
 
 .parrafo {
     font-size: 1.5rem;
-
+    min-width: 500px;
     align-content: center;
 }
 
 .articulo1div {
-    margin: 0 400px 0;
+    margin: 0 20% 0 20%;
     text-align: justify;
 }
