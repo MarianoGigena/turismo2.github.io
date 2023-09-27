@@ -8,6 +8,9 @@
     padding: 20px;
     width: 60%;
     text-align: center;
+    background-color: #b3f6b3;
+    border-radius: 15px;
+
 }
 .section__nosotros-mision h4 , .section__nosotros-vision h4, .section__nosotros-historia h3 {
     font-size: 30px;
