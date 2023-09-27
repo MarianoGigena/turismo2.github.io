@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,11 +7,12 @@
   <meta name="viewport" content="width=device-width" />
   <title>Cudi Turismo - Nosotros</title>
   <link rel="icon" href="asset/media/logo.ico" />
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body bgcolor=#EAFAF1>
   <header>
-    <a href="index.html"><img src="asset/media//logo.png" alt="Logo" width="20%" title="Inicio"></a>
+    <a href="index.html"><img src="asset/media//logoR.png" alt="Logo" width="20%" title="Inicio"></a>
     <!--logo de la compania-->
     <table align="center">
       <tr>
@@ -46,12 +48,14 @@
 
 
   <main>
-    <section>
-      <article>
-        <h3>Nuestra historia</h3>
-        <img src="asset/media/hist.jpg" width="50%" alt="" />
+    <section class="section__nosotros">
+
+      <div class="section__nosotros-historia">
+        <h3>✈ Quienes somos? </h3>
+        <img src="asset/media/nos.jpg" width="45%" alt="" />
+        <img src="asset/media/nos1.jpg" width="45%" alt="" />
         <p>
-          Hace más de una década, un grupo de apasionados viajeros decidió
+          🔹 Hace más de una década, un grupo de apasionados viajeros decidió
           convertir su amor por explorar el mundo en algo más que una pasión
           personal. Así nació Cudi Turismo. Desde entonces, hemos estado
           dedicados a compartir la belleza y la diversidad de nuestro país con
@@ -64,57 +68,62 @@
           descubrir experiencias únicas y a mostrar a nuestros clientes el
           corazón de Argentina.
         </p>
-      </article>
-      <article>
-        <h3>Nuestra Misión</h3>
-        <img src="asset/media/mision.jpg" width="50%" alt="" />
+      </div>
 
-        <p>
-          En Cudi Turismo, nuestra misión es simple pero poderosa: queremos
-          que cada viaje sea una experiencia inolvidable. Creemos en el poder
-          de los viajes para enriquecer vidas, fomentar la comprensión
-          cultural y crear recuerdos que perduren para siempre. Estamos
-          comprometidos a brindar a nuestros clientes no solo un viaje, sino
-          una aventura auténtica y significativa.
-        </p>
-      </article>
+      <section class="section__misvision">
+        <article class="section__nosotros-mision">
+          <h4> ✈ Nuestra Misión</h4>
+          <p>
+            🔹 Nuestra misión en Cudi Turismo es hacer que tus viajes sean inolvidables. Trabajamos
+            para brindarte experiencias auténticas y significativas en la hermosa provincia de
+            Córdoba. Queremos que
+            descubras la magia de nuestros destinos y te sientas parte de la cultura local mientras
+            exploras. Nuestro compromiso es ofrecerte momentos que perduren para siempre y
+            enriquezcan tu vida a través de los viajes.
+          </p>
+        </article>
+  
+        <article class="section__nosotros-vision">
+          <h4> ✈ Nuestra Visión</h4>
+          <p>
+            🔹 Nuestra visión en Cudi Turismo es convertirnos en la agencia de viajes de elección para quienes desean
+            descubrir Córdoba de manera auténtica. Nos esforzamos por ser líderes en la creación de experiencias únicas
+            que conecten a las personas con la belleza natural y cultural de nuestra región. Queremos ser reconocidos por
+            nuestro compromiso con la sostenibilidad y la excelencia en el servicio al cliente. En el futuro, aspiramos a
+            ser un referente en la industria del turismo, promoviendo un turismo responsable y enriquecedor en Córdoba.
+          </p>
+        </article>
+      </section>
+
+
     </section>
   </main>
-  <hr />
-  <h4><a href="index.html">VOLVER AL INICIO</a></h4>
-  <footer>
-    <div>
-      <table>
-        <u>
-          <h4>Contactenos</h4>
-        </u>
-        <tr>
-          <td><img src="asset/media/MAIL.png" width="36" /></td>
-          <td><a href="">cudi.turismo@gmail.com</a></td>
-        </tr>
 
-        <th>
-          <u>
-            <hr />
-            <h4>Redes</h4>
-          </u>
-        </th>
-        <tr>
-          <td><img src="asset/media/FACEBOOK.png" width="36" /></td>
-          <td><a href="">Facebook</a></td>
-        </tr>
-        <tr>
-          <td><img src="asset/media/TWITTER.png" width="36" /></td>
-          <td><a href="">Twitter</a></td>
-        </tr>
-        <tr>
-          <td><img src="asset/media/INSTAGRAM.png" width="36" /></td>
-          <td><a href="">Instagram</a></td>
-        </tr>
-      </table>
+  <!-- Inicio de footter, copiar en todas las paginas-->
+
+  <footer>  
+    <div class="footer_volverIn">
+        <button class="footer__button-volver"><a href="index.html">VOLVER AL INICIO</a></button>
     </div>
-    <hr />
-  </footer>
+
+    <div class="container__redes">
+      <hr>
+        <h4> Nuestras redes</h4>
+        <span class="container__redes-link">        
+          <a href="mailto:cudi.turismo@gmail.com" ><img src="/asset/media/gmail.ico" alt="" width="100px"></a>
+        </span>
+        <span class="container__redes-link">        
+          <a href="https://twitter.com/" target="_blank" ><img src="asset/media/twitter.ico" alt="" width="100px"></a>
+        </span>
+        <span class="container__redes-link">        
+          <a href="https://www.instagram.com/"  target="_blank"><img src="asset/media/instagram.ico" alt="" width="100px"></a>
+        </span>
+        <span class="container__redes-link">        
+          <a href="https://www.facebook.com/"  target="_blank"><img src="asset/media/facebook.ico" alt="" width="100px"></a>
+        </span>
+    </div>
+</footer>
+
 </body>
 
 </html>
