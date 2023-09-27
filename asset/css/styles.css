@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 10px;
+    padding: 0px;
 }
 
 body {
@@ -71,8 +71,12 @@ h2 {
 }
 
 h2>a {
+    font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra con desplazamiento de 2px en horizontal y 2px en vertical, opacidad 0.5 */
+
 }
 
 h4 {
@@ -80,18 +84,22 @@ h4 {
 }
 
 main {
-    margin-top: 300px;
+    margin-top: 320px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 22%);
+
+
 }
 
 .articulo1 {
     text-align: center;
-    border: 3px solid blue;
+
 }
 
 .parrafo {
     font-size: 1.5rem;
     min-width: 500px;
     align-content: center;
+    font-weight: 600;
 }
 
 .articulo1div {
