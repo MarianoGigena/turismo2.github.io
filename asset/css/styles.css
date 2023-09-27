@@ -14,7 +14,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: lightgreen;
+    /* background-color: lightgreen;*/
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
+
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
@@ -27,7 +29,9 @@ body {
 ul {
     text-align: center;
     display: inline, block;
-    background-color: lightseagreen;
+    /*background-color: lightseagreen;*/
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
+
     border-radius: 10px;
 
 }
@@ -56,8 +60,8 @@ nav {
 
 h1 {
     text-align: center;
-    color: black;
-    font-size: 2rem;
+    color: white;
+    font-size: 3rem;
 }
 
 h2 {
