@@ -43,3 +43,6 @@ footer {
     height: 100px;
     margin: 20px;
 }
+.container__redes-link a {
+    width: 13%;
+}
