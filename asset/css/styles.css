@@ -75,12 +75,17 @@ h2>a {
     color: black;
 }
 
+h4 {
+    color: white;
+}
+
 main {
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 .articulo1 {
     text-align: center;
+    border: 3px solid blue;
 }
 
 .parrafo {
@@ -92,4 +97,34 @@ main {
 .articulo1div {
     margin: 0 20% 0 20%;
     text-align: justify;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 36px;
+    animation: animateText 5s infinite alternate;
+}
+
+@keyframes animateText {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        color: black;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+        color: white;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        color: black;
+    }
 }
