@@ -1,0 +1,45 @@
+.section__nosotros {
+    width: 100%;
+    padding: 10px;
+}
+footer {
+    height: 30%;
+    width: 100;
+    background-color: #D2FAE3;
+    text-align: center;
+}
+
+.section__nosotros-historia, .section__nosotros-mision , .section__nosotros-vision {
+    margin: 40px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+}
+.section__nosotros-mision h4 , .section__nosotros-vision h4, .section__nosotros-historia h3 {
+    font-size: 30px;
+    color: #0090af;
+    text-decoration: underline solid #a5e0bf 4px;
+}
+.section__nosotros-mision p , .section__nosotros-vision p, .section__nosotros-historia p {
+    font-size: 20px;
+}
+.footer__button-volver {
+    background-color: #95dbb4;
+    font-size: 15px;
+    size: 6px;
+    height: 50px;
+    border: 1px solid #a5e0bf;
+    border-radius: 10px;
+    padding: 5px;
+	font-weight:bold;
+}
+
+.footer_volverIn {
+    text-align: end;
+    padding: 20px;
+    color: aqua;
+}
+.container__redes-link {
+    height: 100px;
+    margin: 20px;
+}
