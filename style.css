@@ -1,24 +1,37 @@
+
+
+
 /*PAGINA NOSOTROS*/
 .section__nosotros {
     width: 100%;
     padding: 10px;
 }
 .section__nosotros-historia, .section__nosotros-mision , .section__nosotros-vision {
-    margin: 40px;
     padding: 20px;
-    width: 60%;
+    width: 100%;
     text-align: center;
-    background-color: #b3f6b3;
-    border-radius: 15px;
+}
+
+.section__nosotros-historia {
+    background-color: #b3f6b3; ;
+}
+.section__nosotros-mision {
+    background-color: #95ebf3; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section__nosotros-vision {
+    background-color: #b3f6b3; ;
 
 }
 .section__nosotros-mision h4 , .section__nosotros-vision h4, .section__nosotros-historia h3 {
-    font-size: 30px;
+    font-size:1.8em;
+    font-family: 'Poppins', sans-serif;
     color: #0090af;
     text-decoration: underline solid #a5e0bf 4px;
 }
 .section__nosotros-mision p , .section__nosotros-vision p, .section__nosotros-historia p {
-    font-size: 20px;
+    font-size: 1.4em;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
@@ -29,18 +42,8 @@ footer {
     background-color: #D2FAE3;
 }
 
-.container__redes-link {
-    height: 100px;
-    margin: 20px;
-}
-.container__redes-link img {
-    width:35px;
-    text-align: center;
-
-}
-
- /*BOTON VOLVER*/
- .footer__button-volver {
+/*BOTON VOLVER*/
+.footer__button-volver {
     display: inline-block;
     width: 200px;
     background-color: #0090af;
@@ -55,3 +58,35 @@ footer {
     color: #ffffff; 
 }
 
+.container__redes {
+    text-align: center;
+    height: 20%;
+}
+.container__redes h4 {
+    font-size: 1.5em;
+    color: #0090af;
+}
+.container__redes-link {
+    height: 100px;
+    display: inline-block;
+    height: 90%;
+}
+.container__redes-link img {
+    width: 45px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Agregamos una transición suave para el cambio de tamaño */
+}
+.container__redes-link:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño en un 20% al hacer hover */
+}
+
+.footer-logo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+.footer-logo img {
+    height: 80%;
+}
