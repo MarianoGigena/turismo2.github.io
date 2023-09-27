@@ -1,10 +1,10 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 body {
-    background-color: lightgray;
+    background-color: lightskyblue;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -14,7 +14,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: lightgray;
+    background-color: lightgreen;
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
@@ -27,7 +27,7 @@ body {
 ul {
     text-align: center;
     display: inline, block;
-    background-color: darkgray;
+    background-color: lightseagreen;
     border-radius: 10px;
 
 }
@@ -41,6 +41,7 @@ li {
 li>a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
 }
 
 li>a:hover {
@@ -71,7 +72,7 @@ h2>a {
 }
 
 main {
-    margin-top: 300px;
+    margin-top: 220px;
 }
 
 .articulo1 {
