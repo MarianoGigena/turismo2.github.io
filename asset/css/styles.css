@@ -207,11 +207,14 @@ footer {
     position: relative;
     bottom: 80%;
     font-size: 200%;
-    animation: animateText 5s infinite alternate;
+    animation: animateText 5s 5 alternate;
 
-    @media (max-width:1600px) {
+
+}
+
+@media (max-width:600px) {
+    .animated-text {
         display: none;
-
     }
 }
 
