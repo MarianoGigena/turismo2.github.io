@@ -134,7 +134,7 @@ h4 {
 }
 
 main {
-    margin-top: 270px;
+    margin-top: 250px;
     background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
     width: fit-content;
 }
