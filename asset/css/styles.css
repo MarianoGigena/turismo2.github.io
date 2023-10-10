@@ -1,44 +1,100 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: lightskyblue;
+
+    /*background-color: lightskyblue;*/
     font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
+    text-align: center;
+    width: fit-content;
+}
+
+.conteiner {
+    display: flex;
+}
+
+.logo {
+    text-align: center;
+    display: inline;
+    border-radius: 15px;
+
 
 }
+
+.nav_pos {
+    /*  float: right;*/
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+
+.nav_pos2 {
+    float: right;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.nav_pos2 {
+    text-align: right;
+
+}
+
+
 
 .navegacion {
     position: fixed;
     top: 0;
     left: 0;
+    height: 200px;
     width: 100%;
-    /* background-color: lightgreen;*/
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
 
+    /* background-color: lightgreen;*/
+    background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
     padding: 10px 0;
     /* Añade relleno para el contenido de la barra de navegación */
-    z-index: 1000;
+    /*z-index: 1000;*/
 
 }
 
-ul {
+.navegacion_p {
     text-align: center;
     display: inline, block;
-    /*background-color: lightseagreen;*/
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
+    background-color: lightseagreen;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /*background: linear-gradient(90deg, rgba(58, 154, 200, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);*/
 
     border-radius: 10px;
 
 }
 
+.login_registro {
+    padding-left: 50%;
+
+
+
+}
+
+.login_registro>li>a {
+
+    border: 2px dotted black;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+
+
 li {
+
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 5px;
 }
 
@@ -46,16 +102,17 @@ li>a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+
 }
 
 li>a:hover {
     background-color: black;
     color: white;
+    border-radius: 15px;
 }
 
 nav {
-
-    position: static
+    display: inline;
 }
 
 h1 {
@@ -71,6 +128,7 @@ h2 {
 }
 
 h2>a {
+
     font-size: 2rem;
     text-decoration: none;
     color: blue;
@@ -83,38 +141,82 @@ h4 {
     color: white;
 }
 
-main {
-    margin-top: 320px;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 22%);
+.imagenArticulos {
+    padding-right: 50px;
+}
 
+main {
+    /*flex: 2;*/
+    margin-top: 250px;
+    background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
+    width: fit-content;
 
 }
 
+
+
 .articulo1 {
+    border: 2px solid black;
+    border-radius: 15px;
+    position: static;
     text-align: center;
+    width: fit-content;
 
 }
 
 .parrafo {
     font-size: 1.5rem;
-    min-width: 500px;
-    align-content: center;
+    /*min-width: 400px;*/
     font-weight: 600;
+    padding: 0 5%
 }
 
 .articulo1div {
-    margin: 0 20% 0 20%;
+    /* margin: 0 20% 0 15%;*/
     text-align: justify;
+
 }
 
+
+
+
+
 footer {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
-    text-align: center;
+    display: block;
+    /*display: flexbox;*/
+    /*bottom: 0;*/
+
+    background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);
+    /*text-align: center;*/
+
+}
+
+.derechos {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.container__redes-link {
+    display: inline-block;
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 .animated-text {
-    font-size: 36px;
-    animation: animateText 5s infinite alternate;
+    position: relative;
+    bottom: 80%;
+    font-size: 200%;
+    animation: animateText 5s 5 alternate;
+
+
+}
+
+@media (max-width:600px) {
+    .animated-text {
+        display: none;
+        font-size: 100%
+    }
 }
 
 @keyframes animateText {
