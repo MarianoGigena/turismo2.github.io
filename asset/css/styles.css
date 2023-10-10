@@ -215,6 +215,7 @@ footer {
 @media (max-width:600px) {
     .animated-text {
         display: none;
+        font-size: 100%
     }
 }
 
