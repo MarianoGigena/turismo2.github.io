@@ -1,42 +1,91 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: lightskyblue;
+    /*background-color: lightskyblue;*/
     font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);*/
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    display: inline;
+    border-radius: 15px;
+
 
 }
+
+.nav_pos {
+    /*  float: right;*/
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+
+.nav_pos2 {
+    float: right;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.nav_pos2 {
+    text-align: right;
+
+}
+
+
 
 .navegacion {
     position: fixed;
     top: 0;
     left: 0;
+    height: 200px;
     width: 100%;
-    /* background-color: lightgreen;*/
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
 
+    /* background-color: lightgreen;*/
+    background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
     padding: 10px 0;
     /* Añade relleno para el contenido de la barra de navegación */
-    z-index: 1000;
+    /*z-index: 1000;*/
 
 }
 
-ul {
+.navegacion_p {
     text-align: center;
     display: inline, block;
     /*background-color: lightseagreen;*/
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(58, 154, 200, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
 
     border-radius: 10px;
 
 }
 
+.login_registro {
+    padding-left: 50%;
+
+
+
+}
+
+.login_registro>li>a {
+
+    border: 2px dotted black;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+
+
 li {
+
     display: inline-block;
     font-size: 2rem;
     padding: 5px;
@@ -46,16 +95,17 @@ li>a {
     text-decoration: none;
     color: black;
     font-weight: 600;
+
 }
 
 li>a:hover {
     background-color: black;
     color: white;
+    border-radius: 15px;
 }
 
 nav {
-
-    position: static
+    display: inline;
 }
 
 h1 {
@@ -84,37 +134,65 @@ h4 {
 }
 
 main {
-    margin-top: 320px;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 22%);
-
-
+    margin-top: 270px;
+    background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
+    width: fit-content;
 }
+
+
 
 .articulo1 {
     text-align: center;
-
+    width: fit-content;
 }
 
 .parrafo {
     font-size: 1.5rem;
-    min-width: 500px;
+    /*min-width: 400px;*/
     align-content: center;
     font-weight: 600;
+    width: 60%;
+    padding-left: 20%;
+
 }
 
 .articulo1div {
-    margin: 0 20% 0 20%;
+    /* margin: 0 20% 0 15%;*/
     text-align: justify;
+
 }
 
+
+
+
+
 footer {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
-    text-align: center;
+    display: flexbox;
+    bottom: 0;
+
+    background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);
+    /*text-align: center;*/
+
+}
+
+
+
+.container__redes-link {
+    display: inline-block;
+    padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 .animated-text {
-    font-size: 36px;
+    position: relative;
+    bottom: 80%;
+    font-size: 200%;
     animation: animateText 5s infinite alternate;
+
+    @media screen and (max-width:1000px) {
+        display: none;
+
+    }
 }
 
 @keyframes animateText {
