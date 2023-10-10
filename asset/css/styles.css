@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 10px;
+    padding: 0px;
 }
 
 body {
@@ -14,7 +14,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: lightgreen;
+    /* background-color: lightgreen;*/
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
+
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
@@ -27,7 +29,9 @@ body {
 ul {
     text-align: center;
     display: inline, block;
-    background-color: lightseagreen;
+    /*background-color: lightseagreen;*/
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
+
     border-radius: 10px;
 
 }
@@ -56,8 +60,8 @@ nav {
 
 h1 {
     text-align: center;
-    color: black;
-    font-size: 2rem;
+    color: white;
+    font-size: 3rem;
 }
 
 h2 {
@@ -67,25 +71,68 @@ h2 {
 }
 
 h2>a {
+    font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra con desplazamiento de 2px en horizontal y 2px en vertical, opacidad 0.5 */
+
+}
+
+h4 {
+    color: white;
 }
 
 main {
-    margin-top: 220px;
+    margin-top: 320px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 22%);
+
+
 }
 
 .articulo1 {
     text-align: center;
+
 }
 
 .parrafo {
     font-size: 1.5rem;
     min-width: 500px;
     align-content: center;
+    font-weight: 600;
 }
 
 .articulo1div {
     margin: 0 20% 0 20%;
     text-align: justify;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 208, 1) 40%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 36px;
+    animation: animateText 5s infinite alternate;
+}
+
+@keyframes animateText {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        color: black;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+        color: white;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        color: black;
+    }
 }
