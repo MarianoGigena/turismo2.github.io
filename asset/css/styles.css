@@ -238,3 +238,56 @@ footer {
         color: black;
     }
 }
+
+/* STYLE PARA BODY NOSOTROS*/
+
+.container_nosotros {
+    margin: 20px 30px;
+    padding: 20px;
+}
+
+.nosotros-historia,
+.nosotros-historia,
+.nosotros-vision {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px;
+}
+
+.nosotros-historia p,
+.nosotros-mision p,
+.nosotros-vision p {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.nosotros-historia img,
+.nosotros-mision img,
+.nosotros-vision img {
+    width: 100%;
+}
+.nosotros-historia img:hover,
+.nosotros-mision img:hover,
+.nosotros-vision img:hover {
+    border: 1px solid #fff;
+}
+
+.nosotros-mision h4,
+.nosotros-vision h4,
+.nosotros-historia h4 {
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nosotros-historia h4:hover,
+.nosotros-mision h4:hover,
+.nosotros-vision h4:hover {
+    color: rgba(99, 89, 249, 1);
+    transition: all 1s;
+}
+
+hr {
+    border: 1px solid #fff;
+}
