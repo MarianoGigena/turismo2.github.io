@@ -4,11 +4,16 @@
 }
 
 body {
+
     /*background-color: lightskyblue;*/
     font-family: 'Poppins', sans-serif;
-    /* background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);*/
+    background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
     text-align: center;
     width: fit-content;
+}
+
+.conteiner {
+    display: flex;
 }
 
 .logo {
@@ -61,8 +66,9 @@ body {
 .navegacion_p {
     text-align: center;
     display: inline, block;
-    /*background-color: lightseagreen;*/
-    background: linear-gradient(90deg, rgba(58, 154, 200, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);
+    background-color: lightseagreen;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /*background: linear-gradient(90deg, rgba(58, 154, 200, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);*/
 
     border-radius: 10px;
 
@@ -135,31 +141,34 @@ h4 {
     color: white;
 }
 
+.imagenArticulos {
+    padding-right: 50px;
+}
+
 main {
+    /*flex: 2;*/
     margin-top: 250px;
     background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
     width: fit-content;
+
 }
 
 
 
 .articulo1 {
+    border: 2px solid black;
+    border-radius: 15px;
     position: static;
     text-align: center;
     width: fit-content;
+
 }
 
 .parrafo {
     font-size: 1.5rem;
     /*min-width: 400px;*/
-    align-content: center;
     font-weight: 600;
-    width: 60%;
-
-    padding-left: 20%;
-
-
-
+    padding: 0 5%
 }
 
 .articulo1div {
@@ -173,16 +182,20 @@ main {
 
 
 footer {
-    width: 100%;
+    display: block;
     /*display: flexbox;*/
     /*bottom: 0;*/
-    position: static;
+
     background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);
     /*text-align: center;*/
 
 }
 
-
+.derechos {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
 
 .container__redes-link {
     display: inline-block;
