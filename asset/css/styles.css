@@ -209,7 +209,7 @@ footer {
     font-size: 200%;
     animation: animateText 5s infinite alternate;
 
-    @media screen and (max-width:1600px) {
+    @media (max-width:1600px) {
         display: none;
 
     }
