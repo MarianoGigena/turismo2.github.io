@@ -121,6 +121,7 @@ h2 {
 }
 
 h2>a {
+
     font-size: 2rem;
     text-decoration: none;
     color: blue;
@@ -142,6 +143,7 @@ main {
 
 
 .articulo1 {
+    position: static;
     text-align: center;
     width: fit-content;
 }
