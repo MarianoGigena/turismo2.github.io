@@ -2,111 +2,111 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Cudi Turismo - Registro</title>
-  <link rel="icon" href="asset/media/logo.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/styles.css">
+  <link rel="stylesheet" href="asset/css/registro.css">
+  <link rel="icon" href="asset/media/logo.ico">
 </head>
 
-<body bgcolor=#EAFAF1>
+<body>
   <header>
-    <a href="index.html"><img src="asset/media//logo.png" alt="Logo" width="20%" title="Inicio"></a>
+
     <!--logo de la compania-->
-    <table align="center">
-      <tr>
-        <td>
-          <u>
-            <h1>CUDI TURISMO</h1>
-          </u>
-        </td>
-      </tr>
-    </table>
-    <hr>
-    <nav>
+    <div class="navegacion">
+      <spam class="avion">Bienvenidos a Cudi Turismo!!!<img src="asset/media/avion.png" alt="" width="10%">
+      </spam>
 
-      <table align="center">
-        <tr>
-          <td>
-            <a href="index.html">
-              <h3>Inicio
-            </a><span> │ </span>
-            <a href="login.html">Login</a><span> │ </span>
-            <a href="registro.html">Registro</a><span> │ </span>
-            <a href="destinos.html">Destinos </a><span> │ </span>
-            <a href="nosotros.html">Nosotros</a><span> │</span>
-            <a href="contacto.html">Contacto</a></h3>
-          </td>
-        </tr>
-      </table>
-    </nav>
-    <hr>
-    <h1>Registro</h1>
-    <hr />
-  </header>
+      <a href="index.html"><img class="logo" src="asset/media//logo.png" alt="Logo" width="10%" title="Inicio"></a>
 
+      <nav class="nav_pos2">
+        <ul class="login_registro">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+      </nav>
 
-  <main>
-    <form action="">
-      <fieldset title="Alta de Usuario">
-        <legend>Alta de Usuario</legend>
-        <label for="nombre">Nombre</label>
-        <div>
-          <input type="text" name="nombre" maxlength="40" id="nombre" />
-        </div>
-        <label for="apellido">Apellido</label>
-        <div>
-          <input type="text" name="apellido" maxlength="40" id="apellido" />
-        </div>
-        <label for="edad">Edad:</label>
-        <div><input type="text" name="edad" maxlength="5px" id="edad" /></div>
-        <label for="genero">Sexo:</label>
-        <div>Masculino<input type="radio" name="genero" id="genero" /></div>
-        <div>Femenino <input type="radio" name="genero" id="genero" /></div>
-        <label for="email">Email:</label>
-        <div>
-          <input type="email" name="email" maxlength="40" id="email" />
-        </div>
-        <br />
-
-        <div><input type="submit" name="registro" value="Registrar" /></div>
-      </fieldset>
-    </form>
-  </main>
-  <hr />
-  <h4><a href="index.html">VOLVER AL INICIO</a></h4>
-  <footer>
-    <div>
-      <table>
-        <u>
-          <h4>Contactenos</h4>
-        </u>
-        <tr>
-          <td><img src="asset/media/MAIL.png" width="36" /></td>
-          <td><a href="">cudi.turismo@gmail.com</a></td>
-        </tr>
-
-        <th>
-          <u>
-            <hr />
-            <h4>Redes</h4>
-          </u>
-        </th>
-        <tr>
-          <td><img src="asset/media/FACEBOOK.png" width="36" /></td>
-          <td><a href="">Facebook</a></td>
-        </tr>
-        <tr>
-          <td><img src="asset/media/TWITTER.png" width="36" /></td>
-          <td><a href="">Twitter</a></td>
-        </tr>
-        <tr>
-          <td><img src="asset/media/INSTAGRAM.png" width="36" /></td>
-          <td><a href="">Instagram</a></td>
-        </tr>
-      </table>
+      <nav class="nav_pos">
+        <ul class="navegacion_p">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-    <hr />
+
+
+
+
+
+  </header>
+  <div class="conteinerForm">
+    <main>
+      <div class="formulario">
+        <form action="show_data.html" target="_blank" method="get">
+          <fieldset title="Alta de Usuario">
+            <legend>Alta de Usuario</legend>
+            <label for="nombre">Nombre</label>
+            <div>
+              <input type="text" name="nombre" maxlength="40" id="nombre" />
+            </div>
+            <label for="apellido">Apellido</label>
+            <div>
+              <input type="text" name="apellido" maxlength="40" id="apellido" />
+            </div>
+            <label for="edad">Edad:</label>
+            <div><input type="text" name="edad" maxlength="5px" id="edad" /></div>
+            <label for="genero">Sexo:</label>
+            <div>Masculino<input type="radio" name="genero" id="genero" value="Masculino" /></div>
+            <div>Femenino <input type="radio" name="genero" id="genero" value="Femenino" /></div>
+            <label for="email">Email:</label>
+            <div>
+              <input class="email" type="email" name="email" maxlength="40" id="email" />
+            </div>
+            <br />
+
+            <div><button type="submit" name="registro" value="Registrar">Registrar</button></div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </div>
+  <footer>
+
+
+    <h2>Contactenos</h2>
+    <h4> Nuestras redes</h4>
+    <div class="container__redes">
+
+
+      <br>
+      <div class="container__redes-link">
+        <a href="mailto:cudi.turismo@gmail.com"><img src="asset/media/gmail.ico" alt="" width="50px"></a>
+      </div>
+      <div class="container__redes-link">
+        <a href="https://twitter.com/" target="_blank"><img src="asset/media/twitter.ico" alt="" width="50px"></a>
+      </div>
+      <div class="container__redes-link">
+        <a href="https://www.instagram.com/" target="_blank"><img src="asset/media/instagram.ico" alt=""
+            width="50px"></a>
+      </div>
+      <siv class="container__redes-link">
+        <a href="https://www.facebook.com/" target="_blank"><img src="asset/media/facebook.ico" alt="" width="50px"></a>
+    </div>
+    <br>
+    <p class="derechos">Derechos reservados 2023</p>
+
+
+
   </footer>
+
 </body>
 
 </html>

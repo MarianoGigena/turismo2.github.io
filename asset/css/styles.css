@@ -1,3 +1,7 @@
+@import url(avion.css);
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,6 +21,7 @@ body {
 }
 
 .logo {
+
     text-align: center;
     display: inline;
     border-radius: 15px;
@@ -165,9 +170,10 @@ main {
 }
 
 .parrafo {
-    font-size: 1.5rem;
+
+    font-size: 1rem;
     /*min-width: 400px;*/
-    font-weight: 600;
+    font-weight: bold;
     padding: 0 5%
 }
 
@@ -182,7 +188,10 @@ main {
 
 
 footer {
-    display: block;
+
+    width: 100%;
+
+
     /*display: flexbox;*/
     /*bottom: 0;*/
 
@@ -196,6 +205,7 @@ footer {
     font-weight: 600;
     padding-bottom: 30px;
 }
+
 
 .container__redes-link {
     display: inline-block;
@@ -239,6 +249,10 @@ footer {
     }
 }
 
+
+
+
+
 /* STYLE PARA BODY NOSOTROS*/
 
 .container_nosotros {
@@ -266,6 +280,7 @@ footer {
 .nosotros-vision img {
     width: 100%;
 }
+
 .nosotros-historia img:hover,
 .nosotros-mision img:hover,
 .nosotros-vision img:hover {

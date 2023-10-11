@@ -1,0 +1,32 @@
+@media (max-width:1200px) {
+    .avion {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+
+    .avion {
+        font-weight: 600;
+        text-shadow: 2px 2px 0 rgba(59, 233, 111, 0.5),
+            -2px -2px 0 rgba(0, 0, 255, 0.5);
+        color: black;
+        position: absolute;
+        font-size: 36px;
+        animation: slide 10s linear infinite;
+        /* Nombre de la animación, duración, tipo de temporización y repetición infinita */
+    }
+
+    @keyframes slide {
+        0% {
+            left: -500px;
+            /* Posición inicial (fuera de la pantalla a la izquierda) */
+        }
+
+        100% {
+            left: 50%;
+            /* Posición final (fuera de la pantalla a la derecha) */
+        }
+    }
+}

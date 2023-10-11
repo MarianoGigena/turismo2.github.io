@@ -1,0 +1,47 @@
+body {
+    width: 100%;
+}
+
+.conteinerForm {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71vh;
+
+}
+
+.formulario {
+    width: 400px;
+    position: static;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 2px dotted black;
+
+
+}
+
+
+
+form button {
+    font-size: 1rem;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(5, 62, 35);
+    color: white;
+}
+
+.email {
+    width: 250px;
+}
+
+input {
+    font-size: 1rem;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aquamarine;
+
+}
