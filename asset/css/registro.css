@@ -1,13 +1,15 @@
 body {
     width: 100%;
+
 }
 
-.conteinerForm {
 
+.conteinerForm {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 71vh;
+    height: 100vh;
 
 }
 
