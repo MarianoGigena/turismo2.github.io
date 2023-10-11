@@ -1,7 +1,6 @@
 @import url(avion.css);
 
 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -171,7 +170,7 @@ main {
 
 .parrafo {
 
-    font-size: 1rem;
+    font-size: 1.5rem;
     /*min-width: 400px;*/
     font-weight: bold;
     padding: 0 5%
