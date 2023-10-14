@@ -4,125 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Cudi Turismo - Contacto</title>
+    <title>Cudi Turismo - Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/styles.css">
     <link rel="icon" href="asset/media/logo.ico">
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor=#EAFAF1>
+<body>
     <header>
-        <a href="index.html"><img src="asset/media//logo.png" alt="Logo" width="20%" title="Inicio"></a>
-        <!--logo de la compania-->
-        <table align="center">
-            <tr>
-                <td>
-                    <u>
-                        <h1>CUDI TURISMO</h1>
-                    </u>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <nav>
+        <div class="navegacion"> <!--Logo de la compania-->
+            <a href="index.html"><img class="logo" src="asset/media//CudiLogo.png" alt="Logo" width="10%"
+                    title="Inicio"></a>
 
-            <table align="center">
-              <tr>
-                <td>
-                  <a href="index.html">
-                    <h3>Inicio
-                  </a><span> │ </span>
-                  <a href="login.html">Login</a><span> │ </span>
-                  <a href="registro.html">Registro</a><span> │ </span>
-                  <a href="destinos.html">Destinos </a><span> │ </span>
-                  <a href="nosotros.html">Nosotros</a><span> │</span>
-                  <a href="contacto.html">Contacto</a></h3>
-                </td>
-              </tr>
-            </table>
-          </nav>
-        <hr>
-        <h1>Contactos</h1>
+            <nav class="nav_pos2">
+                <ul class="login_registro">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav_pos">
+                <ul class="navegacion_p">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav> <!-- FIN NAV-->
+        </div>
     </header>
     <hr>
-    <h2>Estamos ubicados en:</h2>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.5597409030147!2d-58.63124772302765!3d-34.79185706746065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5925425fb9b%3A0xb6680e29203b8739!2sCUDI.%20Centro%20Universitario%20de%20la%20Innovaci%C3%B3n.%20Gonz%C3%A1lez%20Cat%C3%A1n!5e0!3m2!1sen!2sar!4v1694493117551!5m2!1sen!2sar"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <hr>
+    <section class="seccion_gps">
+        <h2>Estamos ubicados en:</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.5597409030147!2d-58.63124772302765!3d-34.79185706746065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5925425fb9b%3A0xb6680e29203b8739!2sCUDI.%20Centro%20Universitario%20de%20la%20Innovaci%C3%B3n.%20Gonz%C3%A1lez%20Cat%C3%A1n!5e0!3m2!1sen!2sar!4v1694493117551!5m2!1sen!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-
-
-    <section> <!-- Formulario -->
-        <h1>Formulario de Contacto</h1>
-        <form action="" method="">
-            <fieldset>
+    <section class="seccion_form"> <!-- Formulario -->
+        <h1 class="titulo_h1">Formulario de Contacto</h1>
+        <div class="form_contacto">
+            <form action="" method="">
                 <legend>
                     <p>Por favor, complete el siguiente formulario:</p>
                 </legend>
-
+    
                 <label for="nombre">Nombre: </label>
                 <input type="text" name="nombre" required> <br><br>
-
+    
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" name="email" required><br><br>
-
+    
                 <label for="tel">Teléfono:</label>
                 <input type="number" name="tel" required><br><br>
-
-                <label>Destinos de Interés:</label><br><br>
-
+    
+                <h2 class="titulo_h2">Destinos de interés</h2>
+    
                 <label for="destino1">Córdoba</label>
                 <input type="checkbox" value="Córdoba"> <br>
-
+    
                 <label for="destino2">Cosquin</label>
                 <input type="checkbox" value="Cosquin"> <br>
-
+    
                 <label for="destino3">General Belgrano</label>
                 <input type="checkbox" value="GeneralBelgrano"> <br>
-
+    
                 <label for="destino4">La Falda</label>
                 <input type="checkbox" value="LaFalda"> <br>
-
+    
                 <label for="destino5">Villa Carlos Paz</label>
                 <input type="checkbox" value="VillaCarlosPaz"> <br>
-
+    
                 <label for="destino6">Villa Maria</label>
                 <input type="checkbox" value="VillaMaria"> <br> <br>
-
+    
                 <label for="comentario">Comentario:</label><br>
                 <textarea name="comentario" cols="40" rows="6"></textarea><br><br>
-
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Reset">
-            </fieldset>
-        </form>
+    
+                <input type="submit" value="Enviar" class="myButton">
+                <input type="reset" value="Reset" class="myButton">
+            </form>
+        </div>
+        
     </section>
 
-    <hr>
-    <footer>  
-        <div class="footer_volverIn">
-            <button class="footer__button-volver"><a href="index.html">VOLVER AL INICIO</a></button>
-        </div>
-    
+    <!-- Inicio de footter, copiar en todas las paginas-->
+
+    <footer>
+
+        <h2>Contactenos</h2>
+        <h4> Nuestras redes</h4>
+
         <div class="container__redes">
-        <hr>
-            <h4> Nuestras redes</h4>
-            <span class="container__redes-link">        <a href="mailto:cudi.turismo@gmail.com" ><img src="/asset/media/gmail.ico" alt="" width="100px"></a>
-            </span>
-            <span class="container__redes-link">        <a href="#" ><img src="/asset/media/twitter.ico" alt="" width="100px"></a>
-            </span>
-            <span class="container__redes-link">        <a href="#" ><img src="/asset/media/instagram.ico" alt="" width="100px"></a>
-            </span>
-            <span class="container__redes-link">        <a href="#" ><img src="/asset/media/facebook.ico" alt="" width="100px"></a>
-            </span>
+            <br>
+            <div class="container__redes-link">
+                <a href="mailto:cudi.turismo@gmail.com"><img src="asset/media/gmail.ico" alt="" width="50px"></a>
+            </div>
+            <div class="container__redes-link">
+                <a href="https://twitter.com/" target="_blank"><img src="asset/media/twitter.ico" alt=""
+                        width="50px"></a>
+            </div>
+            <div class="container__redes-link">
+                <a href="https://www.instagram.com/" target="_blank"><img src="asset/media/instagram.ico" alt=""
+                        width="50px"></a>
+            </div>
+            <siv class="container__redes-link">
+                <a href="https://www.facebook.com/" target="_blank"><img src="asset/media/facebook.ico" alt=""
+                        width="50px"></a>
         </div>
+        <br>
+        <p class="derechos">Derechos reservados 2023</p>
+
     </footer>
-
-
-
-
 </body>
 
 </html>
