@@ -250,7 +250,11 @@ footer {
 }
 
 
-
+.generalbelgrano,
+.villamaria,
+.lafalda {
+    margin-top: 250px;
+}
 
 
 /* STYLE PARA BODY NOSOTROS*/
@@ -267,6 +271,7 @@ footer {
     flex-direction: column;
     margin: 25px 0px;
 }
+
 .nosotros-historia p,
 .nosotros-mision p,
 .nosotros-vision p {
@@ -302,7 +307,8 @@ footer {
     transition: all 1s;
 }
 
-.parrafos_txt::first-letter{ /*PSEUDOELEMENTO*/
+.parrafos_txt::first-letter {
+    /*PSEUDOELEMENTO*/
     initial-letter: 2;
     font-weight: bold;
     color: #fff;
@@ -319,18 +325,22 @@ hr {
     margin-bottom: 20px;
     top: 300px;
 }
+
 .titulo_h2 {
     font-size: 1.3em;
     color: #fff;
     text-decoration: underline;
 }
+
 .titulo_h1 {
     color: #fff;
     font-size: 1.5em;
 }
+
 .form_contacto {
     padding: 20px;
 }
+
 .seccion_form {
     margin: 0 auto;
     text-align: left;
@@ -338,32 +348,34 @@ hr {
     padding: 20px;
     margin: 0 30vw;
 }
+
 .seccion_form input {
     border: 2px solid rgb(255, 255, 255);
 }
 
 .buttton_form {
-	box-shadow: 0px 0px 0px 2px #3dc21b;
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:10px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	padding:10px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+    box-shadow: 0px 0px 0px 2px #3dc21b;
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color: #44c767;
+    border-radius: 10px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
     margin: 5px 10px;
 }
+
 .buttton_form:hover {
-	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
-}
-.buttton_form:active {
-	position:relative;
-	top:1px;
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color: #5cbf2a;
 }
 
+.buttton_form:active {
+    position: relative;
+    top: 1px;
+}
