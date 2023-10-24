@@ -291,14 +291,18 @@ footer {
 .nosotros-historia p,
 .nosotros-mision p,
 .nosotros-vision p {
-    font-size: 1em;
-    text-align: justify;
+    font-size: 1.2rem;
+    text-align: left;
+    font-family: 'Comfortaa', sans-serif;
+    width: 90%;
 }
 
 .nosotros-historia img,
 .nosotros-mision img,
 .nosotros-vision img {
-    width: 100%;
+    width: 90%;
+    margin: 30px auto;
+
 }
 
 .nosotros-historia img:hover,
@@ -311,77 +315,107 @@ footer {
 .nosotros-vision h4,
 .nosotros-historia h4 {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     text-align: center;
     margin: 10px 0;
+    animation: ch-color 2s  linear 0s infinite normal forwards;
+    background-color: #6359f9 ;
 }
+@keyframes ch-color {
+    0% {
+        color:  aqua;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: aqua;
+    }
+}
+hr {
+    border: none;
+    border-top: 3px dotted #6359f9;
+    text-align: center;
+    height: 5px;
+  }
+
 
 .nosotros-historia h4:hover,
 .nosotros-mision h4:hover,
 .nosotros-vision h4:hover {
-    color: rgba(99, 89, 249, 1);
+    color: #6359f9;
     transition: all 1s;
 }
 
 .parrafos_txt::first-letter {
     /*PSEUDOELEMENTO*/
-    initial-letter: 2;
-    font-weight: bold;
-    color: #fff;
-}
-
-hr {
-    border: 1px solid #fff;
+    font-family: 'Comfortaa', sans-serif;
+    initial-letter: 1.9;
+    text-align: center;
+    color: #6359f9;
+    padding: 5px;
 }
 
 /* STYLE PAG CONTACTO */
 
 .seccion_gps {
-    margin-top: 300px;
-    margin-bottom: 20px;
-    top: 300px;
+    margin: 250px auto;
+    text-align: center;
+    height: 50vh;
+    width: 100vw;
 }
-.encabezado_h2{
-    font-size: 1.4em;
-    color: #fff;
-    text-decoration: underline;
+
+.seccion_gps iframe {
+    border: 5px solid gainsboro;
+    height: 90%;
+    width: 90%;
 }
-.encabezado_h2:hover{
-    font-size: 1.5em;
-    color: #2f6627;
-    transition: all 1s linear;
+
+.encabezado_h2 {
+    color: #080808;
+    font-size: 1.5rem;
 }
 
 .titulo_h1 {
-    color: #fff;
-    font-size: 1.5em;
+    color: #080808;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.form_contacto {
-    padding: 20px;
+.input-contacto {
+    font-size: 1.2rem;
+    width: 80%;
+    padding: 15px;
 }
 
-.seccion_form {
-    margin: 0 auto;
-    text-align: left;
-    border: 5px dotted #3dc21b;
-    padding: 20px;
-    margin: 0 30vw;
-}
-.seccion_form:hover {
-    border: 5px dotted  #fff;
-    transition: all .5s linear;
-
-}
-
-.seccion_form input {
-    border: 2px solid rgb(255, 255, 255);
-}
 .seccion_form textarea {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    width: 85%;
+}
+
+.seccion_form legend {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px;
+    color: #272727;
+    font-weight: bold;
+}
+
+.checkbox-contacto {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.seccion_form .seccion_form textarea {
     width: 90%;
     overflow-y: auto;
     border: 3px solid #fff;
 }
+
 .buttton_form {
     box-shadow: 0px 0px 0px 2px #3dc21b;
     background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
