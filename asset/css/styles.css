@@ -10,14 +10,14 @@ body {
 
     /*background-color: lightskyblue;*/
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
+    background-color: #6499E9;
     text-align: center;
-    width: fit-content;
+    /* width: fit-content; */
     min-width: 560px;
     width: 100%
 }
 
-.conteiner {
+.conteiner2 {
     display: flex;
 }
 
@@ -51,32 +51,73 @@ body {
 
 
 
+.sector-2 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+@media (max-width:960px) {
+    .sector-2 {
+        display: block;
+
+    }
+}
+
+.articulo-2 {
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.articulo-3 {
+    padding-top: 60px;
+}
+
+.card {
+    position: static;
+    margin: 50px auto 0px;
+    height: 800px;
+
+
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-body {
+    background-color: #6499E9;
+    color: white
+}
+
 .navegacion {
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 200px;
+
+    height: 250px;
     width: 100%;
 
+
     /* background-color: lightgreen;*/
-    background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgba(13, 215, 196, 1) 88%);
+    background-color: #6499E9;
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
     padding: 10px 0;
     /* Añade relleno para el contenido de la barra de navegación */
     /*z-index: 1000;*/
+    z-index: 1001;
 
 }
 
 .navegacion_p {
+    margin-top: 40px;
     text-align: center;
     display: inline, block;
-    background-color: lightseagreen;
+    background-color: #9EDDFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /*background: linear-gradient(90deg, rgba(58, 154, 200, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);*/
 
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
@@ -114,7 +155,7 @@ li>a {
 li>a:hover {
     background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 nav {
@@ -153,9 +194,9 @@ h4 {
 
 main {
     /*flex: 2;*/
-    margin-top: 250px;
-    background: radial-gradient(circle, rgba(38, 245, 236, 1) 0%, rgba(13, 178, 235, 1) 95%);
-    width: fit-content;
+    margin-top: 230px;
+    background-color: #A0BFE0;
+    width: 100%;
 
 }
 
@@ -166,6 +207,16 @@ main {
 }
 
 
+.carousel {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.carousel-caption h5 {
+    background-color: black;
+    color: white
+}
 
 .articulo1 {
     border: 2px solid black;
@@ -173,6 +224,7 @@ main {
     position: static;
     text-align: center;
     width: fit-content;
+
 
 }
 
@@ -202,7 +254,7 @@ footer {
     /*display: flexbox;*/
     /*bottom: 0;*/
 
-    background: linear-gradient(90deg, rgba(99, 89, 249, 1) 0%, rgb(13, 217, 196) 88%);
+    background-color: #6499E9;
     /*text-align: center;*/
 
 }
@@ -341,12 +393,14 @@ hr {
     margin-bottom: 20px;
     top: 300px;
 }
-.encabezado_h2{
+
+.encabezado_h2 {
     font-size: 1.4em;
     color: #fff;
     text-decoration: underline;
 }
-.encabezado_h2:hover{
+
+.encabezado_h2:hover {
     font-size: 1.5em;
     color: #2f6627;
     transition: all 1s linear;
@@ -368,8 +422,9 @@ hr {
     padding: 20px;
     margin: 0 30vw;
 }
+
 .seccion_form:hover {
-    border: 5px dotted  #fff;
+    border: 5px dotted #fff;
     transition: all .5s linear;
 
 }
@@ -377,11 +432,13 @@ hr {
 .seccion_form input {
     border: 2px solid rgb(255, 255, 255);
 }
+
 .seccion_form textarea {
     width: 90%;
     overflow-y: auto;
     border: 3px solid #fff;
 }
+
 .buttton_form {
     box-shadow: 0px 0px 0px 2px #3dc21b;
     background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);

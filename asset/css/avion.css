@@ -15,12 +15,13 @@
         position: absolute;
         font-size: 36px;
         animation: slide 10s linear infinite;
+        z-index: -1;
         /* Nombre de la animación, duración, tipo de temporización y repetición infinita */
     }
 
     @keyframes slide {
         0% {
-            left: -500px;
+            left: -700px;
             /* Posición inicial (fuera de la pantalla a la izquierda) */
         }
 
