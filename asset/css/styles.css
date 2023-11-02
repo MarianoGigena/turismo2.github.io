@@ -18,6 +18,7 @@ body {
 }
 
 .conteiner2 {
+
     display: flex;
 }
 
@@ -99,21 +100,28 @@ body {
 
     /* background-color: lightgreen;*/
     background-color: #6499E9;
+    background-image: url(/asset/media/mountains-1412683_1920.png);
+    background-size: contain;
+
+
     /* Cambia esto al color que desees */
     color: #fff;
     /* Cambia esto al color del texto que desees */
-    padding: 10px 0;
+    padding: 0px 0;
     /* Añade relleno para el contenido de la barra de navegación */
     /*z-index: 1000;*/
     z-index: 1001;
 
 }
 
+
+
 .navegacion_p {
-    margin-top: 40px;
+    margin-top: 0px;
     text-align: center;
     display: inline, block;
     background-color: #9EDDFF;
+
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /*background: linear-gradient(90deg, rgba(58, 154, 200, 1) 0%, rgba(58, 154, 208, 1) 30%, rgba(0, 212, 255, 1) 100%);*/
 
@@ -194,7 +202,7 @@ h4 {
 
 main {
     /*flex: 2;*/
-    margin-top: 230px;
+    margin-top: 240px;
     background-color: #A0BFE0;
     width: 100%;
 
@@ -389,9 +397,9 @@ hr {
 /* STYLE PAG CONTACTO */
 
 .seccion_gps {
-    margin-top: 300px;
+    margin-top: 00px;
     margin-bottom: 20px;
-    top: 300px;
+    /* top: 300px; */
 }
 
 .encabezado_h2 {
