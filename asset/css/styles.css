@@ -29,6 +29,7 @@ body {
     border-radius: 15px;
 
 
+
 }
 
 .nav_pos {
@@ -94,13 +95,13 @@ body {
 .navegacion {
     position: fixed;
 
-    height: 250px;
+    height: 260px;
     width: 100%;
 
 
     /* background-color: lightgreen;*/
     background-color: #6499E9;
-    background-image: url(/mountains-1412683_1920.png);
+    background-image: url("/mountains-1412683_1920.png");
     background-size: contain;
 
 
