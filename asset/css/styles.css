@@ -253,6 +253,7 @@ main {
 
 
 .galeria {
+    background-color: #A0BFE0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     /* Las imágenes tienen un ancho mínimo de 200px y se ajustan automáticamente */
