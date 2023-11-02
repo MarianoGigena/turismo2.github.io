@@ -263,6 +263,7 @@ main {
 
 .imagen {
     overflow: hidden;
+    border-radius: 15px;
     /* Evita que las imágenes se desborden de su contenedor */
 }
 
@@ -273,6 +274,10 @@ main {
     /* Mantiene la relación de aspecto original */
 }
 
+.imagen:hover {
+    transform: scale(1.1);
+    /* Escala la imagen en un 10% cuando se posiciona sobre ella */
+}
 
 footer {
 
