@@ -252,7 +252,25 @@ main {
 }
 
 
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Las imágenes tienen un ancho mínimo de 200px y se ajustan automáticamente */
+    grid-gap: 10px;
+    /* Espacio entre las imágenes */
+}
 
+.imagen {
+    overflow: hidden;
+    /* Evita que las imágenes se desborden de su contenedor */
+}
+
+.imagen img {
+    width: 100%;
+    /* Asegura que las imágenes ocupen todo el espacio del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto original */
+}
 
 
 footer {
