@@ -421,50 +421,81 @@ hr {
 
 /* STYLE PAG CONTACTO */
 
+.main_princ { 
+display: flex
+}
 .seccion_gps {
-    margin-top: 00px;
-    margin-bottom: 20px;
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
     /* top: 300px; */
 }
 
-.encabezado_h2 {
-    font-size: 1.4em;
-    color: #fff;
-    text-decoration: underline;
+.seccion_gps_info {
+    justify-content: center;
+    text-align: left;
+
+}
+.seccion_gps_info h3 {
+    color: #222222;
+    font-size: 1.2em;
+}
+.seccion_gps_info p {
+    color: #202020;
+    font-size: 1em;
 }
 
-.encabezado_h2:hover {
-    font-size: 1.5em;
-    color: #2f6627;
-    transition: all 1s linear;
-}
 
+/*Formulario de Contacto*/
 .titulo_h1 {
     color: #fff;
     font-size: 1.5em;
+    margin: 20px;
 }
-
-.form_contacto {
-    padding: 20px;
-}
-
 .seccion_form {
+    display: block;
+    width: 80%;
     margin: 0 auto;
-    text-align: left;
-    border: 5px dotted #3dc21b;
+    text-align: center;
     padding: 20px;
-    margin: 0 30vw;
 }
 
-.seccion_form:hover {
-    border: 5px dotted #fff;
-    transition: all .5s linear;
-
-}
-
-.seccion_form input {
+.form_contacto_datos input {
     border: 2px solid rgb(255, 255, 255);
+    height: 2em;
+    margin: 10px;
+    width: 100%;
 }
+
+/* CAJA DE CHECKBOX */
+
+.form_contacto_datos_check {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto_datos_check {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    width: 30%;
+}
+
+.contacto_datos_check label {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.contacto_datos_check input[type="checkbox"] {
+    flex: 3;
+    height: 20px;
+    justify-content: center;
+}
+
 
 .seccion_form textarea {
     width: 90%;
@@ -473,25 +504,26 @@ hr {
 }
 
 .buttton_form {
-    box-shadow: 0px 0px 0px 2px #3dc21b;
-    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-    background-color: #44c767;
+    box-shadow: 0px 0px 0px 2px #1bb7c2;
+    background: linear-gradient(to bottom, #6499E9 5%, #9EDDFF 100%);
+    background-color: #44adc7;
     border-radius: 10px;
-    border: 1px solid #18ab29;
+    border: 1px solid #6499E9;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: #000000;
     font-family: Arial;
     font-size: 19px;
     padding: 10px 15px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
+    text-shadow: 0px 1px 0px #5a5a5a;
     margin: 5px 10px;
 }
 
 .buttton_form:hover {
-    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background: linear-gradient(to bottom, #2a5ebf 5%, #4b6eb9 100%);
     background-color: #5cbf2a;
+    color: #fff;
 }
 
 .buttton_form:active {
