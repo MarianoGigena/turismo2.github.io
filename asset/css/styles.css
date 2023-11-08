@@ -345,7 +345,11 @@ footer {
 .generalbelgrano,
 .villamaria,
 .lafalda {
-    margin-top: 250px;
+    margin-top: 25px;
+}
+
+.lista_villa_maria li {
+    display: block;
 }
 
 .formlogin {
