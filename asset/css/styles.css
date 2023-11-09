@@ -270,8 +270,7 @@ main {
 .imagen img {
     width: 100%;
     /* Asegura que las imágenes ocupen todo el espacio del contenedor */
-    height: auto;
-    /* Mantiene la relación de aspecto original */
+    min-height: 100%;
 }
 
 .imagen:hover {
@@ -279,9 +278,12 @@ main {
     /* Escala la imagen en un 10% cuando se posiciona sobre ella */
 }
 
+
+
 footer {
 
     width: 100%;
+    padding-top: 40px;
 
 
     /*display: flexbox;*/
@@ -368,18 +370,20 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 100px 20px;
-    border: 2px solid brown;
 }
 
 .nosotros__principal-historia,
 .nosotros__principal-mision,
 .nosotros__principal-vision {
+    background-color: lightcyan;
     margin: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 6fr;
     grid-gap: 6px;
     height: 50vh;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 
@@ -391,11 +395,12 @@ footer {
     text-align: justify;
 }
 
-.nosotros__principal_img{
+.nosotros__principal_img {
     height: 100%;
     padding: 10px;
 }
-.nosotros__principal_img{
+
+.nosotros__principal_img {
     grid-row: 1/3;
 }
 
@@ -407,6 +412,7 @@ footer {
     text-align: center;
     color: #2a5ebf
 }
+
 .nosotros__principal_img img {
     width: 100%;
     height: 100%;
@@ -419,9 +425,10 @@ footer {
 
 /* STYLE PAG CONTACTO */
 
-.main_princ { 
-display: flex
+.main_princ {
+    display: flex
 }
+
 .seccion_gps {
     margin: 100px;
     display: flex;
@@ -438,10 +445,12 @@ display: flex
     text-align: left;
 
 }
+
 .seccion_gps_info h3 {
     color: #222222;
     font-size: 1.2em;
 }
+
 .seccion_gps_info p {
     color: #202020;
     font-size: 1em;
@@ -450,10 +459,11 @@ display: flex
 
 /*Formulario de Contacto*/
 .titulo_h1 {
-    color: #fff;
+    color: #2a5ebf;
     font-size: 1.5em;
     margin: 20px;
 }
+
 .seccion_form {
     display: block;
     width: 80%;
@@ -474,29 +484,32 @@ display: flex
 .form_contacto_datos_check {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+
 }
 
 .contacto_datos_check {
-    margin: 10px auto;
     width: 100%;
     display: flex;
-    width: 30%;
+    align-items: center;
+    text-align: left;
 }
 
 .contacto_datos_check label {
-    flex: 2;
-    margin-right: 10px;
+    flex: 1;
+    /* Ocupa todo el espacio disponible horizontalmente */
+    text-align: left;
 }
 
 .contacto_datos_check input[type="checkbox"] {
-    flex: 3;
+    flex: 1;
     height: 20px;
     justify-content: center;
 }
 
-
 .seccion_form textarea {
-    width: 90%;
+    display: block;
+    margin: 0 auto;
     overflow-y: auto;
     border: 3px solid #fff;
 }
