@@ -430,89 +430,116 @@ footer {
 }
 
 .seccion_gps {
-    margin: 100px;
+    margin: 50px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    /* top: 300px; */
 }
-
+.seccion_gps iframe {
+    border: 20px solid azure;
+}
 .seccion_gps_info {
     justify-content: center;
     text-align: left;
-
+    padding: 20px;
+}
+.titulo_gps{
+    color: #bf2a2a;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px;
 }
 
-.seccion_gps_info h3 {
-    color: #222222;
+.seccion_gps_info h4 {
+    text-align: left;
+    color: #2a5ebf;
     font-size: 1.2em;
+    margin: 5px auto;
 }
 
-.seccion_gps_info p {
-    color: #202020;
-    font-size: 1em;
+.seccion_gps_info p , .parrafo_gps{
+    font-size: 1.2em;
 }
 
 
 /*Formulario de Contacto*/
-.titulo_h1 {
+
+
+.titulo_h1, .titulo_h2, .titulo_coment {
     color: #2a5ebf;
     font-size: 1.5em;
-    margin: 20px;
-}
-
-.seccion_form {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
     text-align: center;
     padding: 20px;
 }
 
-.form_contacto_datos input {
-    border: 2px solid rgb(255, 255, 255);
-    height: 2em;
-    margin: 10px;
-    width: 100%;
+.seccion_form {
+    display: block;
+    width: 70%;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-/* CAJA DE CHECKBOX */
+.form_contacto_datos input {
+    border: 2px solid rgb(255, 255, 255);
+    height: 2rem;
+    margin: 10px 0;
+    width: 60%;
+    }
 
-.form_contacto_datos_check {
+/* CAJA DE CHECKBOX DESTINOS */
+
+.form_contacto_datos_destinos {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1em;
 }
 
 .contacto_datos_check {
     width: 100%;
     display: flex;
-    align-items: center;
-    text-align: left;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.contacto_datos_check:nth-child(odd){
+    background-color: #bad0eb;
 }
 
 .contacto_datos_check label {
-    flex: 1;
-    /* Ocupa todo el espacio disponible horizontalmente */
+    flex: .5;
     text-align: left;
+    font-size: 1em;
 }
 
 .contacto_datos_check input[type="checkbox"] {
     flex: 1;
-    height: 20px;
-    justify-content: center;
+    height: 1.4em;
+    margin: auto ;
 }
 
+@media (max-width:700px) {
+    .form_contacto_datos_check {
+    width: 100vh;
+}
+.seccion_form {
+width: 100%;
+margin: 0 auto;
+}
+}
+
+
 .seccion_form textarea {
-    display: block;
     margin: 0 auto;
     overflow-y: auto;
     border: 3px solid #fff;
+    min-width: 60%;
+    max-width: 80%;
 }
+
 
 .buttton_form {
     box-shadow: 0px 0px 0px 2px #1bb7c2;

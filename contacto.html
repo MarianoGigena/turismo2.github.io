@@ -11,8 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="asset/css/styles.css">
-
     <link rel="icon" href="asset/media/logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-ggd3c7Bh+OqM7PzWlMV3vaf1z4F7TPvI5cE/OnppgC8=" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -46,23 +47,23 @@
     <div class="main_princ">
         <main>
             <section class="seccion_gps">
-                <span class="seccion_gps_gps">
-                    <iframe
-                        src="https://www.google.com/maps/d/u/0/embed?mid=1EAEl7KDF-y7ODcODQ0nknU5vk4a1OOU&ehbc=2E312F"
-                        width="640" height="480"></iframe>
+                <span >
+                    <h3 class="titulo_gps"> 
+                        📌 OFICINA PRINCIPAL - SECRETARÍA DE TURISMO</h3>
+                    <p  class="parrafo_gps">Dirección: Av. Colón 123, Córdoba Capital. <br>
+                        Atención: Todos los días de la semana de 9:00 a 18:00 hs. <br>
+                        <b>Teléfono: +54 351 1234567</b>
+                    </p> <br> <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.028545344405!2d-64.1846703!3d-31.4133396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a32fb34f359f%3A0xf13483f2bd907b95!2sAv.%20Col%C3%B3n%20123%2C%20X5000EPB%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1699578555384!5m2!1sen!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </span>
 
 
 
                 <span class="seccion_gps_info">
-                    <h3>OFICINA PRINCIPAL - SECRETARÍA DE TURISMO</h3>
-                    <p>Dirección: Av. Colón 123, Córdoba Capital. <br>
-                        Atención: Todos los días de la semana de 9:00 a 18:00 hs. <br>
-                        <b>Teléfono: +54 351 1234567</b>
-                    </p> <br> <br>
 
 
-                    <h4>TERMINAL DE ÓMNIBUS DE CÓRDOBA</h4>
+
+                    <h4>📍 TERMINAL DE ÓMNIBUS DE CÓRDOBA</h4><br>
                     <p>Dirección: Av. Principal 567, Córdoba Capital. <br>
                         La oficina está ubicada dentro
                         de la Terminal de Ómnibus. <br>
@@ -70,33 +71,25 @@
                         Atención: De lunes a domingo de 8:00 a 20:00 hs
                     </p> <br>
 
-
-                    <h4>PUNTO DE INFORMACIÓN TURÍSTICA</h4>
+                    <h4>📍 PUNTO DE INFORMACIÓN TURÍSTICA</h4><br>
                     <p>Dirección: Calle Rivadavia y Plaza de las Flores, Córdoba Capital.<br>
-                        Atención: Todos los días de la semana de 9:00 a 18:00 hs.</p>
+                        Atención: Todos los días de la semana de 9:00 a 18:00 hs.</p> <br><br>
 
-
-                    <h4>PUNTO DE INFORMACIÓN TURÍSTICA AEROPUERTO CÓRDOBA</h4>
+                    <h4>📍 PUNTO DE INFORMACIÓN TURÍSTICA AEROPUERTO CÓRDOBA</h4><br>
                     <p>Dirección: Localidad Los Pájaros, a 10 kilómetros al oeste del aeropuerto de
                         Córdoba.</p>
                     <p>Atención: De lunes a domingo, en horarios de arribos.</p> <br><br>
-
-
-                    <h4>CASA DE BIENVENIDA "SIERRAS DE CÓRDOBA"</h4>
-                    <p>Centro de informes turísticos y recepción de donaciones</p>
-                    <p>Dirección: Av. Montaña 789, Villa Carlos Paz.</p>
-                    <p>Atención: Todos los días de la semana de 9:00 a 18:00 hs.</p> <br></br>
                 </span>
             </section>
 
+            <hr>
+
+            <br><br>
             <section class="seccion_form"> <!-- Formulario -->
                 <h1 class="titulo_h1">Formulario de Contacto</h1>
 
                 <div class="form_contacto_datos">
                     <form action="" method="">
-                        <legend>
-                            <p>Por favor, complete el siguiente formulario:</p>
-                        </legend>
 
                         <div><label for="nombre">Nombre: </label></div>
                         <div><input type="text" name="nombre" required></div>
@@ -111,7 +104,8 @@
 
                 <h2 class="titulo_h2">Destinos de interés</h2>
 
-                <div class="form_contacto_datos_check">
+                <div class="form_contacto_datos_destinos">
+
                     <div class="contacto_datos_check">
                         <label for="destino1">Córdoba</label>
                         <input type="checkbox" id="destino1" name="destinos[]" value="Córdoba">
@@ -129,7 +123,7 @@
 
                     <div class="contacto_datos_check">
                         <label for="destino4">La Falda</label>
-                        <input type="checkbox" id="destino4" name="destinos[]" value="La Falda">
+                        <input type="checkbox" id="destino4" name="destinos[]" value="La Falda" class="hh" >
                     </div>
 
                     <div class="contacto_datos_check">
@@ -141,10 +135,14 @@
                         <label for="destino6">Villa Maria</label>
                         <input type="checkbox" id="destino6" name="destinos[]" value="Villa Maria">
                     </div>
-                </div>
 
-                <label for="comentario">Comentario:</label><br>
-                <textarea name="comentario" rows="6"></textarea><br><br>
+                </div>
+                    <h2 class="titulo_coment">Dejanos tu mensaje: 
+                    </h2>
+                <label for="comentario"></label><br>
+                    <textarea name="comentario" rows="10" > 
+                    </textarea>
+<br><br>
 
                 <input type="submit" value="Enviar" class="buttton_form">
                 <input type="reset" value="Reset" class="buttton_form">
