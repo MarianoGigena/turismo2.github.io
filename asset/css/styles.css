@@ -155,14 +155,14 @@ li {
 }
 
 li>a {
-    text-decoration: none;
-    color: black;
+    text-decoration:underline;
+    color: rgb(0, 0, 0);
     font-weight: 600;
 
 }
 
 li>a:hover {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 5px;
 }
@@ -184,7 +184,7 @@ h2 {
 }
 
 h2>a {
-    cursor: pointer;
+    cursor:pointer;
     font-size: 2rem;
     text-decoration: none;
     color: blue;
@@ -441,7 +441,7 @@ footer {
 /* STYLE PAG CONTACTO */
 
 .main_princ {
-    display: flex;
+    display: flex
 }
 
 .seccion_gps {
@@ -482,7 +482,7 @@ footer {
 /*Formulario de Contacto*/
 
 
-.titulo_h1, .titulo_h2, .titulo_coment, .seccion_form h1{
+.titulo_h1, .titulo_h2, .titulo_coment {
     color: #2a5ebf;
     font-size: 1.5em;
     text-align: center;
@@ -495,20 +495,9 @@ footer {
     font-size: 1.2em;
     font-weight: bold;
 }
-.seccion-form-input{
-    width: 70%; 
-    height: 2rem;
-    margin: 10px 0;
-    box-sizing: border-box; /* Incluir el borde y el relleno en el ancho total */
-    border: 2px solid rgb(255, 255, 255);
-    font-size: 1.2rem;
-    transition: all .5s ease;
-}
-.seccion-form-input:focus {
-    background-color: #ddedff;
-}
 
 .form_contacto_datos input {
+    border: 2px solid rgb(255, 255, 255);
     height: 2rem;
     margin: 10px 0;
     width: 60%;
@@ -553,7 +542,7 @@ footer {
 }
 .seccion_form {
 width: 100%;
-margin: 0 auto
+margin: 0 auto;
 }
 }
 
