@@ -7,7 +7,6 @@
 }
 
 body {
-
     /*background-color: lightskyblue;*/
     font-family: 'Poppins', sans-serif;
     background-color: #6499E9;
@@ -441,7 +440,7 @@ footer {
 /* STYLE PAG CONTACTO */
 
 .main_princ {
-    display: flex
+    display: flex;
 }
 
 .seccion_gps {
@@ -490,8 +489,6 @@ footer {
 }
 
 .seccion_form {
-    display: block;
-    width: 70%;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -536,17 +533,6 @@ footer {
     margin: auto ;
 }
 
-@media (max-width: 768px) {
-    .form_contacto_datos_check {
-    width: 100vh;
-}
-.seccion_form {
-width: 100%;
-margin: 0 auto;
-}
-}
-
-
 .seccion_form textarea {
     margin: 0 auto;
     overflow-y: auto;
@@ -583,3 +569,37 @@ margin: 0 auto;
     position: relative;
     top: 1px;
 }
+
+/* Responsive de contacto */
+@media (max-width: 768px) {
+    .main_princ {
+        flex-direction: column; 
+    }
+
+    .seccion_gps {
+        margin: 30px;
+    }
+
+    .seccion_gps_info {
+        width: 100%; 
+    }
+
+    .seccion_form {
+        width: 100%;
+    }
+
+    .form_contacto_datos input {
+        width: 85%;
+    }
+
+    .form_contacto_datos_destinos {
+        width:85%; 
+    }
+
+    .seccion_form textarea {
+        width: 100%; 
+        min-width: 300px;
+        min-height: 200px;
+    }
+}
+
