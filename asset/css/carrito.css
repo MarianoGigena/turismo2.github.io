@@ -395,6 +395,8 @@ footer {
     height: auto;
 }
 
+
+
 .card:hover {
     transform: scale(1.05); /* Hace que la tarjeta se agrande ligeramente en hover */
     transition: transform 0.3s ease; 
