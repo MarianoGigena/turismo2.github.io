@@ -16,6 +16,35 @@ body {
     width: 100%
 }
 
+/*Boton Volver Arriba */
+.volver_Inicio {
+    font-size: 1.2em;
+    margin-top: 20px; /* Espaciado superior */
+    text-align: right; /* Alineado a la derecha */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+    width: fit-content;
+    padding: 20px;
+    margin-left: auto; /* Empuja el elemento hacia la derecha */
+    margin-right: 10px; /* Margen a la derecha de 5px */
+}
+
+.volver_Inicio a {
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    color: #3498db; /* Color del texto del enlace */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease; /* Transición de color suave durante 0.3 segundos */
+}
+
+.volver_Inicio a:hover {
+    color: #2c3e50; /* Cambia el color al pasar el ratón sobre el enlace */
+}
+
+
+ 
+
+
+
+
 .conteiner2 {
 
     display: flex;
@@ -280,17 +309,13 @@ main {
 
 
 footer {
-
     width: 100%;
-    padding-top: 40px;
-
-
+    padding-top: 20px;
     /*display: flexbox;*/
     /*bottom: 0;*/
-
     background-color: #6499E9;
+    height: fit-content;
     /*text-align: center;*/
-
 }
 
 .derechos {
@@ -303,7 +328,7 @@ footer {
 .container__redes-link {
     display: inline-block;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .animated-text {
@@ -369,6 +394,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 100px 20px;
+    background-color: #A0BFE0;
 }
 
 .nosotros__principal-historia,
@@ -441,6 +467,7 @@ footer {
 
 .main_princ {
     display: flex;
+    width: 100%;
 }
 
 .seccion_gps {
@@ -453,6 +480,7 @@ footer {
 }
 .seccion_gps iframe {
     border: 20px solid azure;
+    width: 100%;
 }
 .seccion_gps_info {
     justify-content: center;
