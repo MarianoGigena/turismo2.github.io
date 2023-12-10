@@ -390,12 +390,17 @@ footer {
     margin-bottom: 20vh;
 }
 
+
+/* Pagina Carrito */
+
+.main_carrito {
+    padding: 30px;
+}
 .card {
     margin: 50px auto 0px;
     height: auto;
+
 }
-
-
 
 .card:hover {
     transform: scale(1.05); /* Hace que la tarjeta se agrande ligeramente en hover */
@@ -414,6 +419,13 @@ footer {
     color: white;
     text-align: center; /* Centrar el contenido */
     padding: 20px;
+}
+.card-title {
+    font-size: 1.8em;
+
+}
+.card-text {
+    font-size: 1.2em;
 }
 
 /* Ajustar el margen de los botones */
