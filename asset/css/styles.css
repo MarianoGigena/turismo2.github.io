@@ -122,7 +122,7 @@ body {
 
 .navegacion {
     position: fixed;
-
+    top: 0;
     height: 260px;
     width: 100%;
 
@@ -632,4 +632,7 @@ footer {
         min-height: 200px;
     }
 }
+
+
+
 

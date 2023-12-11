@@ -18,26 +18,26 @@ body {
 
 /*Boton Volver Arriba */
 .volver_Inicio {
-     font-size: 1.2em;
-     margin-top: 20px; 
-     text-align: right; 
-     background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
-     width: fit-content;
-     padding: 20px;
-     margin-left: auto; 
-     margin-right: 10px; 
- }
- 
- .volver_Inicio a {
-     text-decoration: none; 
-     color: #3498db; 
-     font-weight: bold;
-     transition: color 0.3s ease; 
- }
- 
- .volver_Inicio a:hover {
-     color: #2c3e50; 
- }
+    font-size: 1.2em;
+    margin-top: 20px; 
+    text-align: right; 
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+    width: fit-content;
+    padding: 20px;
+    margin-left: auto; 
+    margin-right: 10px; 
+}
+
+.volver_Inicio a {
+    text-decoration: none; 
+    color: #3498db; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.volver_Inicio a:hover {
+    color: #2c3e50; 
+}
 
 
  
@@ -311,10 +311,8 @@ main {
 footer {
     width: 100%;
     padding-top: 20px;
-    margin-top: 100px;
     /*display: flexbox;*/
-    position: relative;
-    bottom: 0;
+    /*bottom: 0;*/
     background-color: #6499E9;
     height: fit-content;
     /*text-align: center;*/
@@ -391,15 +389,28 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Pagina Carrito */
 
 .main_carrito {
-    padding: 30px;
+    padding: 50px;
+
 }
 .card {
     margin: 50px auto 0px;
-    height: auto;
-
 }
 
 .card:hover {
@@ -428,9 +439,55 @@ footer {
     font-size: 1.2em;
 }
 
+.card-img-top{
+    height: 100%;
+}
+
 /* Ajustar el margen de los botones */
 .card-body button {
     margin-top: 10px;
 }
+/* Pagina Carrito */
+
+.main_carrito {
+    padding: 40px 10px;
+
+}
+.card {
+    margin: 50px auto 0px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hace que la tarjeta se agrande ligeramente en hover */
+    transition: transform 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover .btn {
+    background-color: #2c3e50; 
+    color: white;
+}
 
 
+.card-body {
+    background-color: #6499E9;
+    color: white;
+    text-align: center; /* Centrar el contenido */
+    padding: 20px;
+}
+.card-title {
+    font-size: 1.8em;
+
+}
+.card-text {
+    font-size: 1.2em;
+}
+
+.card-img-top{
+    height: 100%;
+}
+
+/* Ajustar el margen de los botones */
+.card-body button {
+    margin-top: 10px;
+}

@@ -7,15 +7,15 @@
     <title>Cudi Turismo - Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="asset/css/carrito.css">
     <link rel="icon" href="asset/media/logo.ico">
     <link rel="stylesheet" href="asset/css/modal_1.css">
     <link rel="stylesheet" href="asset/css/modal_f.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -32,11 +32,12 @@
                     <li><a href="destinos.html">Destinos</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="carrito.html">Paquetes</a></li>
+                    <li><a href="carrito.html">Viajes</a></li>
                 </ul>
             </nav>
             <span class="avion">¡Bienvenidos a Cudi Turismo!<img src="asset/media/avion.png" alt="" width="10%"></span>
-            <a href="index.html"><img class="logo" src="asset/media/CudiLogo.png" alt="Logo" width="10%" title="Inicio"></a>
+            <a href="index.html"><img class="logo" src="asset/media/CudiLogo.png" alt="Logo" width="10%"
+                    title="Inicio"></a>
             <nav class="nav_pos2">
                 <ul class="login_registro">
                     <li><a href="#" id="openModalLink">Login</a></li>
@@ -46,193 +47,156 @@
         </div>
     </header>
 
-<main class="main_carrito">
+    <main class="main_carrito">
 
-    <div class="container mt-4 ">
+        <div class="container mt-4 ">
 
-        <h2>Elegí tu paquete </h2>
+            <h2>Elegí tu viaje  </h2>
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Tarjeta para el destino Córdoba Capital -->
-            <div class="col">
-                <div class="card">
-                    <img src="asset/media/carrito/cordobacapital.jpg" alt="Córdoba Capital" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Córdoba Capital</h5>
-                        <p class="card-text">Explora la encantadora ciudad de Córdoba con sus barrios históricos y vibrante
-                            vida cultural.</p>
-                        <!-- Formulario para seleccionar opciones -->
-                        <form>
-                            <div class="mb-3">
-                                <label for="cantidadPersonas" class="form-label">Cantidad de Personas</label>
-                                <input type="number" class="form-control" id="cantidadPersonas" min="1" max="10" value="1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tipoTransporte" class="form-label">Tipo de Transporte</label>
-                                <select class="form-select" id="tipoTransporte">
-                                    <option value="avion">Avión</option>
-                                    <option value="micro">Micro</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaIda" class="form-label">Fecha de Ida</label>
-                                <input type="date" class="form-control" id="fechaIda">
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaVuelta" class="form-label">Fecha de Vuelta</label>
-                                <input type="date" class="form-control" id="fechaVuelta">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Reservar</button>
-                        </form>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <!-- Tarjeta para el destino Córdoba Capital -->
+                <div class="col">
+                    <div class="card">
+                        <img src="asset/media/carrito/cordobacapital.jpg" alt="Córdoba Capital" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Córdoba Capital</h5>
+                            <p class="card-text">Explora la encantadora ciudad de Córdoba con sus barrios históricos y vibrante vida cultural.</p>
+                            <!-- Formulario para seleccionar opciones -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="cantidadPersonasCC" class="form-label">Cantidad de Personas</label>
+                                    <input type="number" class="form-control" id="cantidadPersonasCC" min="1" max="10" value="1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipoTransporteCC" class="form-label">Tipo de Transporte</label>
+                                    <select class="form-select" id="tipoTransporteCC">
+                                        <option value="avion">Avión</option>
+                                        <option value="micro">Micro</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Reservar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Tarjeta para el destino Villa María -->
-            <div class="col">
-                <div class="card">
-                    <img src="asset/media/carrito/cordobacapital.jpg" alt="Villa María" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Villa María</h5>
-                        <p class="card-text">Descubre la belleza de Villa María con su encantadora costanera y el famoso
-                            Festival de Peñas.</p>
-                        <!-- Formulario para seleccionar opciones -->
-                        <form>
-                            <div class="mb-3">
-                                <label for="cantidadPersonas2" class="form-label">Cantidad de Personas</label>
-                                <input type="number" class="form-control" id="cantidadPersonas2" min="1" max="10" value="1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tipoTransporte2" class="form-label">Tipo de Transporte</label>
-                                <select class="form-select" id="tipoTransporte2">
-                                    <option value="avion">Avión</option>
-                                    <option value="micro">Micro</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaIda2" class="form-label">Fecha de Ida</label>
-                                <input type="date" class="form-control" id="fechaIda2">
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaVuelta2" class="form-label">Fecha de Vuelta</label>
-                                <input type="date" class="form-control" id="fechaVuelta2">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Reservar</button>
-                        </form>
+            
+                <!-- Tarjeta para el destino Villa María -->
+                <div class="col">
+                    <div class="card">
+                        <img src="asset/media/carrito/cordobacapital2.jpeg" alt="Villa María" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Villa María</h5>
+                            <p class="card-text">Explora la encantadora ciudad de Villa María y disfruta de su ambiente acogedor y cultural.</p>
+                            <!-- Formulario para seleccionar opciones -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="cantidadPersonasVM" class="form-label">Cantidad de Personas</label>
+                                    <input type="number" class="form-control" id="cantidadPersonasVM" min="1" max="10" value="1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipoTransporteVM" class="form-label">Tipo de Transporte</label>
+                                    <select class="form-select" id="tipoTransporteVM">
+                                        <option value="avion">Avión</option>
+                                        <option value="micro">Micro</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Reservar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Tarjeta para el destino La Falda -->
-            <div class="col">
-                <div class="card">
-                    <img src="asset/media/carrito/cordobacapital.jpg" alt="La Falda" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">La Falda</h5>
-                        <p class="card-text">Explora La Falda y disfruta de sus atracciones populares como el Hotel Edén y
-                            las hermosas cascadas.</p>
-                        <!-- Formulario para seleccionar opciones -->
-                        <form>
-                            <div class="mb-3">
-                                <label for="cantidadPersonas3" class="form-label">Cantidad de Personas</label>
-                                <input type="number" class="form-control" id="cantidadPersonas3" min="1" max="10" value="1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tipoTransporte3" class="form-label">Tipo de Transporte</label>
-                                <select class="form-select" id="tipoTransporte3">
-                                    <option value="avion">Avión</option>
-                                    <option value="micro">Micro</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaIda3" class="form-label">Fecha de Ida</label>
-                                <input type="date" class="form-control" id="fechaIda3">
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaVuelta3" class="form-label">Fecha de Vuelta</label>
-                                <input type="date" class="form-control" id="fechaVuelta3">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Reservar</button>
-                        </form>
+            
+                <!-- Tarjeta para el destino Villa General Belgrano -->
+                <div class="col">
+                    <div class="card">
+                        <img src="asset/media/carrito/cordobacapital3.jpeg" 
+                        alt="Villa General Belgrano" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Villa General Belgrano</h5>
+                            <p class="card-text">Descubre la hermosa Villa General Belgrano con su arquitectura al estilo bávaro y eventos tradicionales.</p>
+                            <!-- Formulario para seleccionar opciones -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="cantidadPersonasVGB" class="form-label">Cantidad de Personas</label>
+                                    <input type="number" class="form-control" id="cantidadPersonasVGB" min="1" max="10" value="1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipoTransporteVGB" class="form-label">Tipo de Transporte</label>
+                                    <select class="form-select" id="tipoTransporteVGB">
+                                        <option value="avion">Avión</option>
+                                        <option value="micro">Micro</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Reservar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Tarjeta para el destino Villa General Belgrano -->
-            <div class="col">
-                <div class="card">
-                    <img src="asset/media/carrito/cordobacapital.jpg" alt="Villa General Belgrano" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Villa General Belgrano</h5>
-                        <p class="card-text">Sumérgete en la cultura alemana en Villa General Belgrano, conocida por sus
-                            festivales y la Fiesta de la Cerveza.</p>
-                        <!-- Formulario para seleccionar opciones -->
-                        <form>
-                            <div class="mb-3">
-                                <label for="cantidadPersonas4" class="form-label">Cantidad de Personas</label>
-                                <input type="number" class="form-control" id="cantidadPersonas4" min="1" max="10" value="1">
-                            </div>
-                            <div class="mb-3">
-                                <label for="tipoTransporte4" class="form-label">Tipo de Transporte</label>
-                                <select class="form-select" id="tipoTransporte4">
-                                    <option value="avion">Avión</option>
-                                    <option value="micro">Micro</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaIda4" class="form-label">Fecha de Ida</label>
-                                <input type="date" class="form-control" id="fechaIda4">
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaVuelta4" class="form-label">Fecha de Vuelta</label>
-                                <input type="date" class="form-control" id="fechaVuelta4">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Reservar</button>
-                        </form>
+            
+                <!-- Tarjeta para el destino La Falda -->
+                <div class="col">
+                    <div class="card">
+                        <img src="asset/media/carrito/reloj.png" alt="La Falda" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">La Falda</h5>
+                            <p class="card-text">Descubre la belleza de La Falda con sus paisajes encantadores y opciones de entretenimiento.</p>
+                            <!-- Formulario para seleccionar opciones -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="cantidadPersonasLF" class="form-label">Cantidad de Personas</label>
+                                    <input type="number" class="form-control" id="cantidadPersonasLF" min="1" max="10" value="1">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipoTransporteLF" class="form-label">Tipo de Transporte</label>
+                                    <select class="form-select" id="tipoTransporteLF">
+                                        <option value="avion">Avión</option>
+                                        <option value="micro">Micro</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Reservar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            
             </div>
-        </div>
-    </div>
+            
+            
 
-    
-</main >
-<h4 class="volver_Inicio"><a href="carrito.html">VOLVER AL INICIO</a></h4>
+
+    </main>
+    <h4 class="volver_Inicio"><a href="carrito.html">VOLVER AL INICIO</a></h4>
 
 
     <!-- Footer -->
-                    <!-- Footer -->
-                    <footer>
+    <!-- Footer -->
+    <footer>
 
-                              <h2>Contactenos</h2>
-                              <h4> Nuestras redes</h4>
+        <h2>Contactenos</h2>
+        <h4> Nuestras redes</h4>
 
-                              <div class="container__redes">
-                                        <br>
-                                        <div class="container__redes-link">
-                                                  <a href="mailto:cudi.turismo@gmail.com"><img
-                                                                      src="asset/media/gmail.ico" alt=""
-                                                                      width="50px"></a>
-                                        </div>
-                                        <div class="container__redes-link">
-                                                  <a href="https://twitter.com/" target="_blank"><img
-                                                                      src="asset/media/twitter.ico" alt=""
-                                                                      width="50px"></a>
-                                        </div>
-                                        <div class="container__redes-link">
-                                                  <a href="https://www.instagram.com/" target="_blank"><img
-                                                                      src="asset/media/instagram.ico" alt=""
-                                                                      width="50px"></a>
-                                        </div>
-                                        <div class="container__redes-link">
-                                                  <a href="https://www.facebook.com/" target="_blank"><img
-                                                                      src="asset/media/facebook.ico" alt=""
-                                                                      width="50px"></a>
-                              </div>
-                              <br>
-                              <p class="derechos">Derechos reservados 2023</p>
+        <div class="container__redes">
+            <br>
+            <div class="container__redes-link">
+                <a href="mailto:cudi.turismo@gmail.com"><img src="asset/media/gmail.ico" alt="" width="50px"></a>
+            </div>
+            <div class="container__redes-link">
+                <a href="https://twitter.com/" target="_blank"><img src="asset/media/twitter.ico" alt=""
+                        width="50px"></a>
+            </div>
+            <div class="container__redes-link">
+                <a href="https://www.instagram.com/" target="_blank"><img src="asset/media/instagram.ico" alt=""
+                        width="50px"></a>
+            </div>
+            <div class="container__redes-link">
+                <a href="https://www.facebook.com/" target="_blank"><img src="asset/media/facebook.ico" alt=""
+                        width="50px"></a>
+            </div>
+            <br>
+            <p class="derechos">Derechos reservados 2023</p>
 
-                    </footer>
-          </body>
+    </footer>
+</body>
 
 </html>
