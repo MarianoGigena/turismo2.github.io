@@ -12,9 +12,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="asset/css/styles.css">
   <link rel="icon" href="asset/media/logo.ico">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
 </head>
 
 <body>
@@ -26,50 +29,34 @@
     <div class="navegacion">
 
       <nav class="nav_pos">
-          <ul class="navegacion_p">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="destinos.html">Destinos</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="carrito.html">Viajes</a></li>
+        <ul class="navegacion_p">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="carrito.html">Viajes</a></li>
 
-          </ul>
+        </ul>
       </nav>
-      <spam class="avion">¡Bienvenidos a Cudi Turismo!<img src="asset/media/avion.png" alt="" width="10%">
-      </spam>
-      <a href="index.html"><img class="logo" src="asset/media/CudiLogo.png" alt="Logo" width="10%"
-              title="Inicio"></a>
-      <nav class="nav_pos2">
+      <span class="avion">¡Bienvenidos a Cudi Turismo!<img src="asset/media/avion.png" alt="" width="10%">
+        </span>
+        <a href="index.html"><img class="logo" src="asset/media/CudiLogo.png" alt="Logo" width="10%" title="Inicio"></a>
+        <nav class="nav_pos2">
           <ul class="login_registro">
-              <li><a href="login.html">Login</a></li>
-              <li><a href="registro.html">Registrarse</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registro.html">Registrarse</a></li>
           </ul>
-      </nav>
-      <!--    <nav class="nav_pos">
-          <ul class="navegacion_p">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="destinos.html">Destinos</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-      </nav> -->
-
-  </div>
+        </nav>
+    </div>
   </header>
   <div class="conteiner2">
 
 
     <main class="nosotros__principal">
 
-      <section class="nosotros__principal-historia">
-        <h4>Quienes somos?</h4>
-        <p class="parrafos_txt">
-          Hace más de una década, un grupo de apasionados viajeros decidió convertir su amor por explorar el mundo en
-          algo más que una pasión personal. Así nació Cudi Turismo. Desde entonces, hemos estado dedicados a compartir
-          la belleza y la diversidad de nuestro país con viajeros de todas partes del mundo. <br> Nuestra pasión por
-            el turismo sostenible y la autenticidad nos ha llevado a descubrir experiencias únicas y a mostrar a
-            nuestros clientes el corazón de Argentina. 💙🤍💙
-        </p>
+      <section class="nosotros__principal-historia" id="historia_Vue">
+        <h4>{{titulo}} </h4>
+        <p class="parrafos_txt"> {{parrafo}} </p>
         <span class="nosotros__principal_img i1">
           <img src="asset/media/nos.jpg" alt="nosotros">
         </span>
@@ -104,7 +91,7 @@
 
   <!-- Inicio de footter, copiar en todas las paginas-->
   <h4 class="volver_Inicio"><a href="nosotros.html">VOLVER AL INICIO</a></h4>
-  
+
   <footer>
 
 
@@ -129,6 +116,18 @@
     <br>
     <p class="derechos">Derechos reservados 2023</p>
   </footer>
+
+  <!-- Vue -->
+  <script>
+    const historia_Vue = new Vue({
+      el: "#historia_Vue",
+      data: {
+        titulo: "Nuestra Historia",
+        parrafo: "Hace más de una década, un grupo de apasionados viajeros decidió convertir su amor por explorar el mundo en algo más que una pasión personal. Así nació Cudi Turismo. Desde entonces, hemos estado dedicados a compartir la belleza y la diversidad de nuestro país con viajeros de todas partes del mundo. Nuestra pasión por el turismo sostenible y la autenticidad nos ha llevado a descubrir experiencias únicas y a mostrar a nuestros clientes el corazón de Argentina. 💙🤍💙",
+      }
+    })
+  </script>
+
 </body>
 
 </html>
