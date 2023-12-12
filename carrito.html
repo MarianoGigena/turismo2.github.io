@@ -170,7 +170,48 @@
 
             </div>
 
+            <div id="app">
+                <h1>Carrito de Compras</h1>
+                <div v-for="(product, index) in products" :key="index" class="product">
+                    <span>{{ product.name }} - ${{ product.price }}</span>
+                    <button @click="addToCart(index)">Agregar al carrito</button>
+                </div>
+                <h2>Carrito</h2>
+                <ul>
+                    <li v-for="(item, index) in cart" :key="index">
+                        {{ item.name }} - ${{ item.price }}
+                        <button @click="removeFromCart(index)">Cancelar</button></br>
 
+                    </li>
+                    <p>Total: ${{ calculateTotal() }}</p>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+            <script>
+                new Vue({
+                    el: '#app',
+                    data: {
+                        products: [
+                            { name: 'Viaje a Cordoba Capital', price: 50000 },
+                            { name: 'Viaje a Villa Maria', price: 45000 },
+                            { name: 'Viaje a Villa General Belgrano', price: 65000 },
+                            { name: 'Viaje a La Falda', price: 35000 },
+                        ],
+                        cart: [],
+                    },
+                    methods: {
+                        addToCart(index) {
+                            this.cart.push(this.products[index]);
+                        },
+                        removeFromCart(index) {
+                            this.cart.splice(index, 1);
+                        },
+                        calculateTotal() {
+                            return this.cart.reduce((total, item) => total + item.price, 0);
+                        },
+                    },
+                });
+            </script>
 
 
     </main>
