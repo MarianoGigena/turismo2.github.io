@@ -169,56 +169,13 @@
                 </div>
 
             </div>
-            <!-- carrito con Vue  -->
-            <!--       <div id="app">
-                <h1>Carrito de Compras</h1>
-                <div v-for="(product, index) in products" :key="index" class="product">
-
-                    <span>{{ product.name }} - ${{ product.price }}</span>
-                    <button @click="addToCart(index)">Agregar al carrito</button>
-                </div>
-                <h2>Carrito</h2>
-                <ul>
-                    <li v-for="(item, index) in cart" :key="index">
-                        {{ item.name }} - ${{ item.price }}
-                        <button @click="removeFromCart(index)">Cancelar</button></br>
-
-                    </li>
-                    <h2>Total: ${{ calculateTotal() }}</h2>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-            <script>
-                new Vue({
-                    el: '#app',
-                    data: {
-                        products: [
-                            { name: 'Viaje a Cordoba Capital', price: 50000 },
-                            { name: 'Viaje a Villa Maria', price: 45000 },
-                            { name: 'Viaje a Villa General Belgrano', price: 65000 },
-                            { name: 'Viaje a La Falda', price: 35000 },
-                        ],
-                        cart: [],
-                    },
-                    methods: {
-                        addToCart(index) {
-                            this.cart.push(this.products[index]);
-                        },
-                        removeFromCart(index) {
-                            this.cart.splice(index, 1);
-                        },
-                        calculateTotal() {
-                            return this.cart.reduce((total, item) => total + item.price, 0);
-                        },
-                    },
-                });
-            </script> -->
+            <!-- carrito con VUE -->
             <div id="app" class="container mt-5">
-                <h1 class="mb-4">Carrito de Compras</h1>
+                <h1 class="mb-3">Carrito de Compras</h1>
                 <div class="row">
                     <!-- Itera sobre los productos con cards de Bootstrap -->
-                    <div v-for="(product, index) in products" :key="index" class="col-md-4 mb-4">
-                        <div class="card">
+                    <div v-for="(product, index) in products" :key="index" class="col-md-3 mb-3">
+                        <div class="card" style="width: 20rem;">
                             <img :src="product.image" class="card-img-top" alt="Product Image">
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
@@ -234,7 +191,7 @@
                     <li v-for="(item, index) in cart" :key="index"
                         class="list-group-item d-flex justify-content-between align-items-center">
                         <img :src="item.image" alt="Product Image" class="mr-3"
-                            style="max-width: 50px; max-height: 50px;">
+                            style="max-width: 150px; max-height: 150px;">
                         {{ item.name }}-${{ item.price }}
                         <span class="badge badge-primary badge-pill">${{ item.price }}</span>
                         <button @click="removeFromCart(index)" class="btn btn-danger btn-sm">Cancelar</button>
