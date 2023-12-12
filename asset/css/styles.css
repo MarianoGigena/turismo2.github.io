@@ -19,28 +19,29 @@ body {
 /*Boton Volver Arriba */
 .volver_Inicio {
     font-size: 1.2em;
-    margin-top: 20px; 
-    text-align: right; 
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+    margin-top: 20px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Fondo transparente */
     width: fit-content;
     padding: 20px;
-    margin-left: auto; 
-    margin-right: 10px; 
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .volver_Inicio a {
-    text-decoration: none; 
-    color: #3498db; 
+    text-decoration: none;
+    color: #3498db;
     font-weight: bold;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .volver_Inicio a:hover {
-    color: #2c3e50; 
+    color: #2c3e50;
 }
 
 
- 
+
 
 
 
@@ -79,7 +80,49 @@ body {
 
 }
 
+/*tabla de usuarios*/
+#listaUsuarios {
+    padding-top: 300px;
+    padding-left: 50px;
+    background-color: #9EDDFF;
+    /* text-align: left;*/
 
+}
+
+tr:nth-child(odd) {
+    background-color: #8ab2ed;
+}
+
+th,
+td {
+    border: 5px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+#nuevoUsuario {
+    font-size: 2rem;
+}
+
+/*fin tabla de usuarios*/
+
+/*formulario de agregar usuarios*/
+#agregarUsuario {
+    padding-top: 300px;
+    background-color: #9EDDFF;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 200px;
+}
+
+/*formulario de editar usuarios*/
+#editarUsuario {
+    padding-top: 300px;
+    background-color: #9EDDFF;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 200px;
+}
 
 .sector-2 {
     display: flex;
@@ -183,7 +226,7 @@ li {
 }
 
 li>a {
-    text-decoration:underline;
+    text-decoration: underline;
     color: rgb(0, 0, 0);
     font-weight: 600;
 
@@ -212,7 +255,7 @@ h2 {
 }
 
 h2>a {
-    cursor:pointer;
+    cursor: pointer;
     font-size: 2rem;
     text-decoration: none;
     color: blue;
@@ -450,6 +493,7 @@ footer {
 
 
 @media (max-width: 768px) {
+
     .nosotros__principal-historia,
     .nosotros__principal-mision,
     .nosotros__principal-vision {
@@ -480,16 +524,19 @@ footer {
     align-items: center;
     padding: 10px;
 }
+
 .seccion_gps iframe {
     border: 20px solid azure;
     width: 100%;
 }
+
 .seccion_gps_info {
     justify-content: center;
     text-align: left;
     padding: 20px;
 }
-.titulo_gps{
+
+.titulo_gps {
     color: #bf2a2a;
     font-size: 1.4em;
     text-align: center;
@@ -503,7 +550,8 @@ footer {
     margin: 5px auto;
 }
 
-.seccion_gps_info p , .parrafo_gps{
+.seccion_gps_info p,
+.parrafo_gps {
     font-size: 1.2em;
 }
 
@@ -511,7 +559,9 @@ footer {
 /*Formulario de Contacto*/
 
 
-.titulo_h1, .titulo_h2, .titulo_coment {
+.titulo_h1,
+.titulo_h2,
+.titulo_coment {
     color: #2a5ebf;
     font-size: 1.5em;
     text-align: center;
@@ -528,7 +578,7 @@ footer {
     height: 2rem;
     margin: 10px 0;
     width: 60%;
-    }
+}
 
 /* CAJA DE CHECKBOX DESTINOS */
 
@@ -547,7 +597,7 @@ footer {
     padding: 10px;
 }
 
-.contacto_datos_check:nth-child(odd){
+.contacto_datos_check:nth-child(odd) {
     background-color: #bad0eb;
 }
 
@@ -560,7 +610,7 @@ footer {
 .contacto_datos_check input[type="checkbox"] {
     flex: 1;
     height: 1.4em;
-    margin: auto ;
+    margin: auto;
 }
 
 .seccion_form textarea {
@@ -603,7 +653,7 @@ footer {
 /* Responsive de contacto */
 @media (max-width: 768px) {
     .main_princ {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .seccion_gps {
@@ -611,7 +661,7 @@ footer {
     }
 
     .seccion_gps_info {
-        width: 100%; 
+        width: 100%;
     }
 
     .seccion_form {
@@ -623,16 +673,12 @@ footer {
     }
 
     .form_contacto_datos_destinos {
-        width:85%; 
+        width: 85%;
     }
 
     .seccion_form textarea {
-        width: 100%; 
+        width: 100%;
         min-width: 300px;
         min-height: 200px;
     }
 }
-
-
-
-
