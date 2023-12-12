@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="asset/css/modal_f.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
 </head>
     <title>Registro</title>
     <script type="text/javascript">
@@ -63,7 +64,8 @@
 ?>
 <div id="listaUsuarios">
     <h1> Lista de usuario</h1>
-    <a id="nuevoUsuario" href="agregar.php">Nuevo Usuario</a><br>
+    <!-- <a id="nuevoUsuario" href="agregar.php">Nuevo Usuario</a><br> -->
+    <button id="nuevoUsuario" onclick="window.location.href='agregar.php'" class="btn">Nuevo Usuario</button>
     <table>
         <thead>
         <tr>    
