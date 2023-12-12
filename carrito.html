@@ -49,192 +49,75 @@
 
     <main class="main_carrito">
 
-        <div class="container mt-4 ">
 
-            <h2>Elegí tu viaje </h2>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-
-                <!-- Tarjeta para el destino Córdoba Capital -->
-                <div class="col">
-                    <div class="card">
-                        <img src="asset/media/carrito/cordobacapital.jpg" alt="Córdoba Capital" class="card-img-top">
+        </div>
+        <!-- carrito con VUE -->
+        <div id="app" class="container mt-4">
+            <h1 class="mb-3">Carrito de Compras</h1>
+            <div class="row">
+                <!-- Itera sobre los productos con cards de Bootstrap -->
+                <div v-for="(product, index) in products" :key="index" class="col-md-3 mb-3">
+                    <div class="card" style="width: 20rem; height: 450px;">
+                        <img :src="product.image" class="card-img-top" alt="Product Image">
                         <div class="card-body">
-                            <h5 class="card-title">Córdoba Capital</h5>
-                            <p class="card-text">Explora la encantadora ciudad de Córdoba con sus barrios históricos y
-                                vibrante vida cultural.</p>
-                            <!-- Formulario para seleccionar opciones -->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="cantidadPersonasCC" class="form-label">Cantidad de Personas</label>
-                                    <input type="number" class="form-control" id="cantidadPersonasCC" min="1" max="10"
-                                        value="1">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="tipoTransporteCC" class="form-label">Tipo de Transporte</label>
-                                    <select class="form-select" id="tipoTransporteCC">
-                                        <option value="avion">Avión</option>
-                                        <option value="micro">Micro</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Reservar</button>
-                            </form>
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">Precio: ${{ product.price }}</p>
+                            <button @click="addToCart(index)" class="btn btn-primary">Agregar al carrito</button>
                         </div>
                     </div>
                 </div>
-
-                <!-- Tarjeta para el destino Villa María -->
-                <div class="col">
-                    <div class="card">
-                        <img src="asset/media/carrito/cordobacapital2.jpeg" alt="Villa María" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Villa María</h5>
-                            <p class="card-text">Explora la encantadora ciudad de Villa María y disfruta de su ambiente
-                                acogedor y cultural.</p>
-                            <!-- Formulario para seleccionar opciones -->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="cantidadPersonasVM" class="form-label">Cantidad de Personas</label>
-                                    <input type="number" class="form-control" id="cantidadPersonasVM" min="1" max="10"
-                                        value="1">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="tipoTransporteVM" class="form-label">Tipo de Transporte</label>
-                                    <select class="form-select" id="tipoTransporteVM">
-                                        <option value="avion">Avión</option>
-                                        <option value="micro">Micro</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Reservar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tarjeta para el destino Villa General Belgrano -->
-                <div class="col">
-                    <div class="card">
-                        <img src="asset/media/carrito/cordobacapital3.jpeg" alt="Villa General Belgrano"
-                            class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Villa General Belgrano</h5>
-                            <p class="card-text">Descubre la hermosa Villa General Belgrano con su arquitectura al
-                                estilo bávaro y eventos tradicionales.</p>
-                            <!-- Formulario para seleccionar opciones -->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="cantidadPersonasVGB" class="form-label">Cantidad de Personas</label>
-                                    <input type="number" class="form-control" id="cantidadPersonasVGB" min="1" max="10"
-                                        value="1">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="tipoTransporteVGB" class="form-label">Tipo de Transporte</label>
-                                    <select class="form-select" id="tipoTransporteVGB">
-                                        <option value="avion">Avión</option>
-                                        <option value="micro">Micro</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Reservar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tarjeta para el destino La Falda -->
-                <div class="col">
-                    <div class="card">
-                        <img src="asset/media/carrito/reloj.png" alt="La Falda" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">La Falda</h5>
-                            <p class="card-text">Descubre la belleza de La Falda con sus paisajes encantadores y
-                                opciones de entretenimiento.</p>
-                            <!-- Formulario para seleccionar opciones -->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="cantidadPersonasLF" class="form-label">Cantidad de Personas</label>
-                                    <input type="number" class="form-control" id="cantidadPersonasLF" min="1" max="10"
-                                        value="1">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="tipoTransporteLF" class="form-label">Tipo de Transporte</label>
-                                    <select class="form-select" id="tipoTransporteLF">
-                                        <option value="avion">Avión</option>
-                                        <option value="micro">Micro</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Reservar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- carrito con VUE -->
-            <div id="app" class="container mt-4">
-                <h1 class="mb-3">Carrito de Compras</h1>
-                <div class="row">
-                    <!-- Itera sobre los productos con cards de Bootstrap -->
-                    <div v-for="(product, index) in products" :key="index" class="col-md-3 mb-3">
-                        <div class="card" style="width: 20rem; height: 450px;">
-                            <img :src="product.image" class="card-img-top" alt="Product Image">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ product.name }}</h5>
-                                <p class="card-text">Precio: ${{ product.price }}</p>
-                                <button @click="addToCart(index)" class="btn btn-primary">Agregar al carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h2 class="mt-5">Carrito</h2>
-                <ul class="list-group">
-                    <li v-for="(item, index) in cart" :key="index"
-                        class="list-group-item d-flex justify-content-between align-items-center">
-                        <img :src="item.image" alt="Product Image" class="mr-3"
-                            style="max-width: 150px; max-height: 150px;">
-                        {{ item.name }}-${{ item.price }}
-                        <span class="badge badge-primary badge-pill">${{ item.price }}</span>
-                        <button @click="removeFromCart(index)" class="btn btn-danger btn-sm">Cancelar</button>
-                    </li>
-                </ul>
-
-                <h3 class="mt-3">Total: ${{ calculateTotal() }}</h3>
-                <button @click="confirmarCompra" class="btn btn-success mt-3">Confirmar Compra</button>
             </div>
 
-            <!-- Agrega el enlace a Vue.js -->
-            <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-            <script>
-                new Vue({
-                    el: '#app',
-                    data: {
-                        products: [
-                            { name: 'Cordoba Capital', price: 50000, image: 'asset/media/carrito/cordobacapital.jpg' },
-                            { name: 'Villa Maria', price: 45000, image: 'asset/media/carrito/cordobacapital2.jpeg' },
-                            { name: 'Villa General Belgrano', price: 35000, image: 'asset/media/carrito/cordobacapital3.jpeg' },
-                            { name: 'La Falda', price: 25000, image: 'asset/media/carrito/reloj.png' },
-                        ],
-                        cart: [],
+            <h2 class="mt-5">Carrito</h2>
+            <ul class="list-group">
+                <li v-for="(item, index) in cart" :key="index"
+                    class="list-group-item d-flex justify-content-between align-items-center">
+                    <img :src="item.image" alt="Product Image" class="mr-3"
+                        style="max-width: 150px; max-height: 150px;">
+                    {{ item.name }}-${{ item.price }}
+                    <span class="badge badge-primary badge-pill">${{ item.price }}</span>
+                    <button @click="removeFromCart(index)" class="btn btn-danger btn-sm">Cancelar</button>
+                </li>
+            </ul>
+
+            <h3 class="mt-3">Total: ${{ calculateTotal() }}</h3>
+            <button @click="confirmarCompra" class="btn btn-success mt-3">Confirmar Compra</button>
+        </div>
+
+        <!-- Agrega el enlace a Vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    products: [
+                        { name: 'Cordoba Capital', price: 50000, image: 'asset/media/carrito/cordobacapital.jpg' },
+                        { name: 'Villa Maria', price: 45000, image: 'asset/media/carrito/cordobacapital2.jpeg' },
+                        { name: 'Villa General Belgrano', price: 35000, image: 'asset/media/carrito/cordobacapital3.jpeg' },
+                        { name: 'La Falda', price: 25000, image: 'asset/media/carrito/reloj.png' },
+                    ],
+                    cart: [],
+                },
+                methods: {
+                    addToCart(index) {
+                        this.cart.push(this.products[index]);
                     },
-                    methods: {
-                        addToCart(index) {
-                            this.cart.push(this.products[index]);
-                        },
-                        removeFromCart(index) {
-                            this.cart.splice(index, 1);
-                        },
-                        calculateTotal() {
-                            return this.cart.reduce((total, item) => total + item.price, 0);
-                        },
-                        confirmarCompra() {
-                            const totalCompra = this.calculateTotal();
-                            alert(`¡Compra confirmada!\nTotal: $${totalCompra}`);
-                            // Aquí podrías realizar acciones adicionales, como enviar la orden al servidor, etc.
-                            this.cart = []; // Limpiar el carrito después de la compra
-                        },
+                    removeFromCart(index) {
+                        this.cart.splice(index, 1);
                     },
-                });
-            </script>
+                    calculateTotal() {
+                        return this.cart.reduce((total, item) => total + item.price, 0);
+                    },
+                    confirmarCompra() {
+                        const totalCompra = this.calculateTotal();
+                        alert(`¡Compra confirmada!\nTotal: $${totalCompra}`);
+                        // Aquí podrías realizar acciones adicionales, como enviar la orden al servidor, etc.
+                        this.cart = []; // Limpiar el carrito después de la compra
+                    },
+                },
+            });
+        </script>
 
 
     </main>
