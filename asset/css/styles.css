@@ -436,16 +436,15 @@ footer {
 /* Pagina nosotros*/
 
 .nosotros__principal {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     padding: 100px 20px;
-    background-color: #A0BFE0;
 }
 
 .nosotros__principal-historia,
 .nosotros__principal-mision,
 .nosotros__principal-vision {
-    background-color: lightcyan;
     margin: 20px;
     display: grid;
     grid-template-columns: 1fr 2fr;
